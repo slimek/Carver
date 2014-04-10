@@ -16,6 +16,10 @@ int APIENTRY wWinMain(
     GameAppSettings s;
     s.initialSceneId = SCENE_MENU;
 
+    s.desktop.frameWidth = 600;
+    s.desktop.frameHeight = 800;
+    s.desktop.frameTitle = "Brittle Sample Game \"Carver\"";
+
     CarverApp app;
 
     return app.Run( s );
