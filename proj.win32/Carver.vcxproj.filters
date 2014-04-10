@@ -24,6 +24,9 @@
     <ClCompile Include="..\src\CarverApp.cpp">
       <Filter>1. Win32 App</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Views\MenuScene.cpp">
+      <Filter>4. Views</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverPch.h">
@@ -34,6 +37,9 @@
     </ClInclude>
     <ClInclude Include="..\src\CarverDefs.h">
       <Filter>1. Win32 App</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Views\MenuScene.h">
+      <Filter>4. Views</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

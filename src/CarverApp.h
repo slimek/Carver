@@ -15,6 +15,11 @@ public:
     /// Application Events ///
 
     void OnLaunch() override;
+
+
+    /// Scene Management ///
+
+    GameScene* CreateScene( Int sceneId ) override;
 };
 
 

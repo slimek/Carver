@@ -14,6 +14,7 @@ int APIENTRY wWinMain(
     HINSTANCE instance, HINSTANCE prevInstance, WCHAR* cmdLine, int cmdShow )
 {
     GameAppSettings s;
+    s.initialSceneId = SCENE_MENU;
 
     CarverApp app;
 

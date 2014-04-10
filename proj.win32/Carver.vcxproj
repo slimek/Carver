@@ -88,11 +88,13 @@
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp" />
     <ClCompile Include="..\src\CarverApp.cpp" />
+    <ClCompile Include="..\src\Views\MenuScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h" />
     <ClInclude Include="..\src\CarverDefs.h" />
     <ClInclude Include="..\src\CarverPch.h" />
+    <ClInclude Include="..\src\Views\MenuScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Brittle\proj.win32\Brittle.vcxproj">
