@@ -3,10 +3,11 @@
 #include "CarverPch.h"
 
 #include "CarverApp.h"
+#include <Caramel/String/ToString.h>
 #include <Windows.h>
 
 #if defined( _DEBUG )
-//#include <vld.h>
+#include <vld.h>
 #endif
 
 
@@ -16,9 +17,13 @@ int APIENTRY wWinMain(
     GameAppSettings s;
     s.initialSceneId = SCENE_MENU;
 
-    s.desktop.frameWidth = 600;
-    s.desktop.frameHeight = 800;
-    s.desktop.frameTitle = "Brittle Sample Game \"Carver\"";
+    DesktopSettings& ds = s.desktop;
+
+    ds.frameWidth = 540;
+    ds.frameHeight = 720;
+    ds.frameTitle = "Brittle Sample Game \"Carver\" - "
+                  + ToString( ds.frameWidth ) + " x " + ToString( ds.frameHeight );
+    ds.assetsPath = "assets";
 
     CarverApp app;
 

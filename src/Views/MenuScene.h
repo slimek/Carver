@@ -15,6 +15,12 @@
 
 class MenuScene : public GameScene
 {
+private:
+
+    /// Game Scene Events ///
+
+    void OnEnterScene() override;
+
 };
 
 

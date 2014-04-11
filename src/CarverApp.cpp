@@ -8,6 +8,7 @@
 
 void CarverApp::OnLaunch()
 {
+    Director::getInstance()->setDisplayStats( true );
 }
 
 
