@@ -16,6 +16,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="5. Precompiled Header">
+      <UniqueIdentifier>{444498c1-8c7a-497b-be96-2c8c72e665c3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp">
@@ -27,11 +30,11 @@
     <ClCompile Include="..\src\Views\MenuScene.cpp">
       <Filter>4. Views</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\CarverPch.cpp">
+      <Filter>5. Precompiled Header</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\CarverPch.h">
-      <Filter>1. Win32 App</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\CarverApp.h">
       <Filter>1. Win32 App</Filter>
     </ClInclude>
@@ -40,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="..\src\Views\MenuScene.h">
       <Filter>4. Views</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CarverPch.h">
+      <Filter>5. Precompiled Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
