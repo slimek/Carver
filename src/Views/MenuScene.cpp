@@ -2,6 +2,7 @@
 
 #include "CarverPch.h"
 #include "Views/MenuScene.h"
+#include <ui/CocosGUI.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -15,6 +16,14 @@ void MenuScene::OnEnterScene()
     alice->setPositionX( 270 );
     alice->setPositionY( 360 );
     this->addChild( alice );
+
+    auto label = ui::TextField::create();
+    label->setText( "Alice" );
+    label->setFontName( "Arial" );
+    label->setFontSize( 30 );
+    label->setPosition( Point( 270, 200 ));
+
+    this->addChild( label );
 }
 
 

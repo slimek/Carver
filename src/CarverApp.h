@@ -12,6 +12,8 @@ class CarverApp : public GameApp
 {
 public:
 
+    ~CarverApp();
+
     /// Application Events ///
 
     void OnLaunch() override;
