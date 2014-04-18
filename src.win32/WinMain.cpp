@@ -21,7 +21,7 @@ int APIENTRY wWinMain(
 
     ds.frameWidth = 540;
     ds.frameHeight = 720;
-    ds.frameTitle = "Brittle Sample Game \"Carver\" - "
+    ds.frameTitle = "Brittle Sample \"Carver\" - "
                   + ToString( ds.frameWidth ) + " x " + ToString( ds.frameHeight );
     ds.assetsPath = "assets";
 

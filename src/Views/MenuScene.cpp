@@ -17,12 +17,16 @@ void MenuScene::OnEnterScene()
     alice->setPositionY( 360 );
     this->addChild( alice );
 
-    auto label = ui::TextField::create();
-    label->setText( "Alice" );
-    label->setFontName( "Arial" );
-    label->setFontSize( 30 );
-    label->setPosition( Point( 270, 200 ));
+    //auto label = ui::TextField::create();
+    //label->setText( "Alice" );
+    //label->setFontName( "Arial" );
+    //label->setFontSize( 30 );
+    //label->setPosition( Point( 270, 200 ));
+    //this->addChild( label );
 
+    auto label = ui::TextBMFont::create( "Alice", "font/nina.fnt" );
+    label->setPosition( Point( 270, 200 ));
+    label->setColor( Color3B::YELLOW );
     this->addChild( label );
 }
 
