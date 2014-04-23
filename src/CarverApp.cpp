@@ -4,7 +4,6 @@
 #include "CarverApp.h"
 
 #include "Views/MenuScene.h"
-#include <editor-support/cocostudio/ObjectFactory.h>
 
 
 void CarverApp::OnLaunch()
@@ -25,14 +24,4 @@ GameScene* CarverApp::CreateScene( Int sceneId )
     }
 
     return nullptr;
-}
-
-
-//
-// Terminate
-//
-
-CarverApp::~CarverApp()
-{
-    cocostudio::ObjectFactory::destroyInstance();
 }

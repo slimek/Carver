@@ -112,12 +112,6 @@
     <ProjectReference Include="..\..\Cocos2d-x3\cocos\2d\cocos2d.vcxproj">
       <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\Cocos2d-x3\cocos\editor-support\cocostudio\proj.win32\libCocosStudio.vcxproj">
-      <Project>{b57cf53f-2e49-4031-9822-047cc0e6bde2}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Cocos2d-x3\cocos\ui\proj.win32\libGUI.vcxproj">
-      <Project>{7e06e92c-537a-442b-9e4a-4761c84f8a1a}</Project>
-    </ProjectReference>
     <ProjectReference Include="..\..\Cocos2d-x3\external\chipmunk\proj.win32\chipmunk.vcxproj">
       <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
     </ProjectReference>
