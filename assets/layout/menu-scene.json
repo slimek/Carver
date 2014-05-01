@@ -1,0 +1,13 @@
+{
+	"widgets":
+	[
+		{
+			"type": "Image",
+			"name": "aliceImage",
+			"x": 270,
+			"y": 360,
+			
+			"imagePath": "texture/alice.png"
+		}
+	]
+}

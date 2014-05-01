@@ -6,6 +6,7 @@
 
 #include "CarverDefs.h"
 #include <Brittle/Core/GameScene.h>
+#include <Brittle/Ui/UiTypes.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -15,6 +16,10 @@
 
 class MenuScene : public GameScene
 {
+public:
+
+    MenuScene();
+
 private:
 
     /// Game Scene Events ///
@@ -23,6 +28,8 @@ private:
 
 
     /// UI Components ///
+
+    Panel* m_panel;
 };
 
 
