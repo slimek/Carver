@@ -5,9 +5,31 @@
 			"type": "Image",
 			"name": "aliceImage",
 			"x": 270,
-			"y": 360,
+			"y": 460,
 			
 			"imagePath": "texture/alice.png"
+		},
+		
+		{
+			"type": "Label",
+			"name": "labelRaw",
+			"x": 270,
+			"y": 320,
+			
+			"fontSize": 30,
+			
+			"text": "Alice"
+		},
+		
+		{
+			"type": "LabelFont",
+			"name": "labelFont",
+			"x": 270,
+			"y": 280,
+			
+			"fontPath": "font/nina.fnt",
+			
+			"text": "Alice"
 		}
 	]
 }

@@ -31,7 +31,9 @@ private:
 
     Panel* m_panel;
 
-    ui::ImageView* m_aliceImage;
+    ui::ImageView*  m_aliceImage;
+    ui::Text*       m_labelRaw;
+    ui::TextBMFont* m_labelFont;
 };
 
 
