@@ -30,6 +30,8 @@ private:
     /// UI Components ///
 
     Panel* m_panel;
+
+    ui::ImageView* m_aliceImage;
 };
 
 

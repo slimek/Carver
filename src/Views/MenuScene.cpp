@@ -3,6 +3,7 @@
 #include "CarverPch.h"
 #include "Views/MenuScene.h"
 #include <Brittle/Ui/Panel.h>
+#include <ui/UIImageView.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -12,17 +13,13 @@
 
 MenuScene::MenuScene()
     : m_panel( nullptr )
+    , m_aliceImage( nullptr )
 {
 }
 
 
 void MenuScene::OnEnterScene()
 {
-    //auto alice = Sprite::create( "texture/alice.png" );
-    //alice->setPositionX( 270 );
-    //alice->setPositionY( 360 );
-    //this->addChild( alice );
-
     auto label = Label::createWithBMFont( "font/nina.fnt", "Alice" );
     label->setPosition( Point( 270, 200 ));
     label->setColor( Color3B::YELLOW );
@@ -30,6 +27,8 @@ void MenuScene::OnEnterScene()
 
     m_panel = Panel::Create( "layout/menu-scene.json" );
     this->addChild( m_panel );
+
+    m_panel->GetChild( "aliceImage", m_aliceImage );
 }
 
 
