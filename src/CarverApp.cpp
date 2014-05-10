@@ -8,7 +8,12 @@
 
 void CarverApp::OnLaunch()
 {
-    Director::getInstance()->setDisplayStats( true );
+    auto director = Director::getInstance();
+
+    director->getOpenGLView()->
+        setDesignResolutionSize( 640, 1, ResolutionPolicy::FIXED_WIDTH );
+
+    director->setDisplayStats( true );
 }
 
 
