@@ -1,6 +1,16 @@
 {
+	"rect": "stretch",
+	
 	"widgets":
 	[
+		{
+			"type": "Image",
+			"name": "background",
+			
+			"rect": "fill",
+			"imagePath": "texture/menu-background.jpg"
+		},
+	
 		{
 			"type": "Image",
 			"name": "aliceImage",
