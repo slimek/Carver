@@ -12,9 +12,30 @@
 		},
 	
 		{
+			"type": "Panel",
+			"name": "menuPanel",
+			
+			"x": 10,
+			"y": 400,
+			"width": 200,
+			"height": 300,
+			
+			"widgets":
+			[
+				{
+					"type": "Image",
+					"name": "panelBackground",
+					
+					"rect": "fill",
+					"imagePath": "texture/panel-background.png"
+				}
+			]
+		},
+	
+		{
 			"type": "Image",
 			"name": "aliceImage",
-			"x": 270,
+			"x": 370,
 			"y": 460,
 			
 			"imagePath": "texture/alice.png"
@@ -23,7 +44,7 @@
 		{
 			"type": "Label",
 			"name": "labelRaw",
-			"x": 270,
+			"x": 370,
 			"y": 320,
 			
 			"fontSize": 30,
@@ -34,7 +55,7 @@
 		{
 			"type": "LabelFont",
 			"name": "labelFont",
-			"x": 270,
+			"x": 370,
 			"y": 280,
 			
 			"fontPath": "font/nina.fnt",
