@@ -24,9 +24,9 @@
 			[
 				{
 					"type": "Image",
-					"name": "panelBackground",
+					"name": "menuBackground",
 					
-					"rect": "fill",
+					"rect": "stretch",
 					"imagePath": "texture/panel-background.png"
 				}
 			]
