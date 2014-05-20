@@ -27,6 +27,11 @@ private:
     void OnEnterScene() override;
 
 
+    /// UI Events ///
+
+    void OnEnterButton_Click( Ref* sender );
+
+
     /// UI Components ///
 
     Panel* m_panel;

@@ -61,6 +61,15 @@
 			"fontPath": "font/nina.fnt",
 			
 			"text": "Alice"
+		},
+		
+		{
+			"type": "Button",
+			"name": "enterButton",
+			"x": 370,
+			"y": 240,
+			
+			"normalPath": "texture/button-normal.png"
 		}
 	]
 }
