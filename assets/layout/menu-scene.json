@@ -1,5 +1,5 @@
 {
-	"rect": "stretch",
+	"rect": "auto",
 	
 	"widgets":
 	[
@@ -26,7 +26,7 @@
 					"type": "Image",
 					"name": "menuBackground",
 					
-					"rect": "stretch",
+					"rect": "auto",
 					"imagePath": "texture/panel-background.png"
 				}
 			]
