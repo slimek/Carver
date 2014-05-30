@@ -18,7 +18,8 @@ using namespace Caramel;
 
 enum SceneId
 {
-    SCENE_MENU = 1,
+    SCENE_MENU  = 1,
+    SCENE_WHACK = 2,
 };
 
 

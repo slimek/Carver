@@ -33,6 +33,9 @@
     <ClCompile Include="..\src\CarverPch.cpp">
       <Filter>5. Precompiled Header</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Views\WhackScene.cpp">
+      <Filter>4. Views</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h">
@@ -46,6 +49,9 @@
     </ClInclude>
     <ClInclude Include="..\src\CarverPch.h">
       <Filter>5. Precompiled Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Views\WhackScene.h">
+      <Filter>4. Views</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

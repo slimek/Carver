@@ -4,6 +4,7 @@
 #include "CarverApp.h"
 
 #include "Views/MenuScene.h"
+#include "Views/WhackScene.h"
 
 
 void CarverApp::OnLaunch()
@@ -25,7 +26,8 @@ GameScene* CarverApp::CreateScene( Int sceneId )
 {
     switch ( sceneId )
     {
-    case SCENE_MENU: return new MenuScene;
+    case SCENE_MENU:  return new MenuScene;
+    case SCENE_WHACK: return new WhackScene;
     }
 
     return nullptr;

@@ -97,12 +97,14 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\src\Views\MenuScene.cpp" />
+    <ClCompile Include="..\src\Views\WhackScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h" />
     <ClInclude Include="..\src\CarverDefs.h" />
     <ClInclude Include="..\src\CarverPch.h" />
     <ClInclude Include="..\src\Views\MenuScene.h" />
+    <ClInclude Include="..\src\Views\WhackScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Brittle\proj.win32\Brittle.vcxproj">
