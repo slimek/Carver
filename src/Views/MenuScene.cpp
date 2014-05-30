@@ -33,6 +33,7 @@ void MenuScene::OnEnterScene()
     m_panel->GetChild( "labelFont", m_labelFont );
 
     m_panel->SetClickHandler( "enterButton", &MenuScene::OnEnterButton_Click, this );
+    m_panel->SetClickHandler( "menuWhack", &MenuScene::OnMenuWhack_Click, this );
 
     CARAMEL_TRACE_INFO( "Scene Size: %s", ToString( this->getContentSize() ));
     CARAMEL_TRACE_INFO( "Panel Size: %s", ToString( m_panel->getContentSize() ));
@@ -48,6 +49,12 @@ void MenuScene::OnEnterScene()
 void MenuScene::OnEnterButton_Click( Ref* sender )
 {
     CARAMEL_TRACE_INFO( "Enter Click!" );
+}
+
+
+void MenuScene::OnMenuWhack_Click( Ref* sender )
+{
+    CARAMEL_TRACE_INFO( "Whack Click!" );
 }
 
 

@@ -30,6 +30,7 @@ private:
     /// UI Events ///
 
     void OnEnterButton_Click( Ref* sender );
+    void OnMenuWhack_Click( Ref* sender );
 
 
     /// UI Components ///

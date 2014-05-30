@@ -28,6 +28,18 @@
 					
 					"rect": "auto",
 					"imagePath": "texture/panel-background.png"
+				},
+				
+				{
+					"type": "LabelButton",
+					"name": "menuWhack",
+					
+					"left": 20,
+					"y": 260,
+					
+					"fontSize": 24,
+					
+					"text": "Whack"
 				}
 			]
 		},
