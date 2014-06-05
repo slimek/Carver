@@ -6,6 +6,8 @@
 
 #include "CarverDefs.h"
 #include <Brittle/Core/GameScene.h>
+#include <Brittle/Ui/UiTypes.h>
+#include <Caramel/Async/AnyEventQueue.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -17,10 +19,31 @@ class WhackScene : public GameScene
 {
 public:
 
-    WhackScene();
+    explicit WhackScene( WhackModelPtr model );
 
 private:
+
+    /// Game Scene Events ///
+
+    void OnEnterScene() override;
+    void OnExitScene() override;
+
+
+    /// UI Components ///
     
+    Panel* m_panel;    
+
+
+    /// Moving Sprites ///
+
+    Sprite* m_mole;
+
+
+    /// MV Components ///
+
+    WhackModelPtr m_model;
+
+    AnyEventQueue m_events;
 };
 
 

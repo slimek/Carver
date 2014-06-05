@@ -3,6 +3,7 @@
 #include "CarverPch.h"
 #include "CarverApp.h"
 
+#include "Models/WhackModel.h"
 #include "Views/MenuScene.h"
 #include "Views/WhackScene.h"
 
@@ -27,7 +28,7 @@ GameScene* CarverApp::CreateScene( Int sceneId )
     switch ( sceneId )
     {
     case SCENE_MENU:  return new MenuScene;
-    case SCENE_WHACK: return new WhackScene;
+    case SCENE_WHACK: return new WhackScene( std::make_shared< WhackModel >() );
     }
 
     return nullptr;

@@ -1,0 +1,14 @@
+{
+	"rect": "auto",
+	
+	"widgets":
+	[
+		{
+			"type": "Image",
+			"name": "background",
+			
+			"rect": "fill",
+			"imagePath": "texture/green-grid.png"
+		}
+	]
+}
