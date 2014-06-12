@@ -5,7 +5,7 @@
 #pragma once
 
 #include "CarverDefs.h"
-#include <Brittle/Core/GameScene.h>
+#include <Brittle/Core/SimpleScene.h>
 #include <Brittle/Ui/UiTypes.h>
 #include <Caramel/Async/AnyEventQueue.h>
 
@@ -15,7 +15,7 @@
 // Whack Scene
 //
 
-class WhackScene : public GameScene
+class WhackScene : public SimpleScene
 {
 public:
 
@@ -23,7 +23,7 @@ public:
 
 private:
 
-    /// Game Scene Events ///
+    /// Scene Events ///
 
     void OnEnterScene() override;
     void OnExitScene() override;

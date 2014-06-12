@@ -5,10 +5,10 @@
 #pragma once
 
 #include "CarverDefs.h"
-#include <Brittle/Core/GameApp.h>
+#include <Brittle/Core/SimpleApp.h>
 
 
-class CarverApp : public GameApp
+class CarverApp : public SimpleApp
 {
 public:
 
@@ -19,7 +19,7 @@ public:
 
     /// Scene Management ///
 
-    GameScene* CreateScene( Int sceneId ) override;
+    SimpleScene* CreateScene( Int sceneId ) override;
 };
 
 

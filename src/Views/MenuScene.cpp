@@ -56,7 +56,7 @@ void MenuScene::OnMenuWhack_Click( Ref* sender )
 {
     CARAMEL_TRACE_INFO( "Whack Click!" );
 
-    GameScene::ReplaceScene( SCENE_WHACK );
+    SimpleScene::ReplaceScene( SCENE_WHACK );
 }
 
 

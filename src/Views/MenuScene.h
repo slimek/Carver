@@ -5,7 +5,7 @@
 #pragma once
 
 #include "CarverDefs.h"
-#include <Brittle/Core/GameScene.h>
+#include <Brittle/Core/SimpleScene.h>
 #include <Brittle/Ui/UiTypes.h>
 
 
@@ -14,7 +14,7 @@
 // Menu Scene
 //
 
-class MenuScene : public GameScene
+class MenuScene : public SimpleScene
 {
 public:
 
@@ -22,7 +22,7 @@ public:
 
 private:
 
-    /// Game Scene Events ///
+    /// Scene Events ///
 
     void OnEnterScene() override;
 

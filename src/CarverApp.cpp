@@ -23,7 +23,7 @@ void CarverApp::OnLaunch()
 // Scene Management
 //
 
-GameScene* CarverApp::CreateScene( Int sceneId )
+SimpleScene* CarverApp::CreateScene( Int sceneId )
 {
     switch ( sceneId )
     {
