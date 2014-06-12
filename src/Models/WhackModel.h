@@ -5,7 +5,7 @@
 #pragma once
 
 #include "CarverDefs.h"
-#include <Brittle/Mv/Model.h>
+#include <Brittle/Mv/Machine.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -13,7 +13,7 @@
 // Whack Model
 //
 
-class WhackModel : public Model
+class WhackModel : public Machine
                  , public std::enable_shared_from_this< WhackModel >
 {
 public:

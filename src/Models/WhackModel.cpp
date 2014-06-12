@@ -17,7 +17,7 @@ enum WhackState
 
 
 WhackModel::WhackModel()
-    : Model( "WhackModel" )
+    : Machine( "WhackModel" )
 {
     m_machine.AddState( WHACK_STATE_HIDDEN )
              .EnterAction( [=] { this->Hidden_Enter(); } );
