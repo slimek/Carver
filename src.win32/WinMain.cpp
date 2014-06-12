@@ -14,7 +14,7 @@
 int APIENTRY wWinMain(
     HINSTANCE instance, HINSTANCE prevInstance, WCHAR* cmdLine, int cmdShow )
 {
-    GameAppSettings s;
+    AppSettings s;
     //s.initialSceneId = SCENE_MENU;
     s.initialSceneId = SCENE_WHACK;
 
