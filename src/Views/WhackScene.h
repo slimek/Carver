@@ -19,7 +19,7 @@ class WhackScene : public SimpleScene
 {
 public:
 
-    explicit WhackScene( WhackModelPtr model );
+    explicit WhackScene( WhackDomainPtr model );
 
 private:
 
@@ -41,7 +41,7 @@ private:
 
     /// MV Components ///
 
-    WhackModelPtr m_model;
+    WhackDomainPtr m_domain;
 
     AnyEventQueue m_events;
 };

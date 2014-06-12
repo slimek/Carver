@@ -29,8 +29,8 @@ enum SceneId
 //
 
 // Models
-class WhackModel;
-typedef std::shared_ptr< WhackModel > WhackModelPtr;
+class WhackDomain;
+typedef std::shared_ptr< WhackDomain > WhackDomainPtr;
 
 // Views
 class MenuScene;

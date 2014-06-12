@@ -2,7 +2,7 @@
 
 #include "CarverPch.h"
 #include "Views/WhackScene.h"
-#include "Models/WhackModel.h"
+#include "Models/WhackDomain.h"
 #include <Brittle/Ui/Panel.h>
 
 
@@ -11,12 +11,12 @@
 // Whack Scene
 //
 
-WhackScene::WhackScene( WhackModelPtr model )
+WhackScene::WhackScene( WhackDomainPtr domain )
     : m_panel( nullptr )
     , m_mole( nullptr )
-    , m_model( std::move( model ))
+    , m_domain( std::move( domain ))
 {
-    m_model->LinkEventTarget( m_events );
+    m_domain->LinkEventTarget( m_events );
 }
 
 

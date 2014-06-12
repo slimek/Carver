@@ -36,7 +36,7 @@
     <ClCompile Include="..\src\Views\WhackScene.cpp">
       <Filter>4. Views</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\Models\WhackModel.cpp">
+    <ClCompile Include="..\src\Models\WhackDomain.cpp">
       <Filter>3. Models</Filter>
     </ClCompile>
   </ItemGroup>
@@ -56,11 +56,11 @@
     <ClInclude Include="..\src\Views\WhackScene.h">
       <Filter>4. Views</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\Models\WhackModel.h">
-      <Filter>3. Models</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Types\Mole.h">
       <Filter>2. Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Models\WhackDomain.h">
+      <Filter>3. Models</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
-// Brittle Sample Game "Carver" - Whack Model Header
+// Brittle Sample Game "Carver" - Whack Domain Header
 
-#ifndef __CARVER_MODELS_WHACK_MODEL_H
-#define __CARVER_MODELS_WHACK_MODEL_H
+#ifndef __CARVER_MODELS_WHACK_DOMAIN_H
+#define __CARVER_MODELS_WHACK_DOMAIN_H
 #pragma once
 
 #include "CarverDefs.h"
@@ -10,15 +10,15 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Whack Model
+// Whack Domain
 //
 
-class WhackModel : public Machine
-                 , public std::enable_shared_from_this< WhackModel >
+class WhackDomain : public Machine
+                  , public std::enable_shared_from_this< WhackDomain >
 {
 public:
 
-    WhackModel();
+    WhackDomain();
 
 private:
 
@@ -29,4 +29,4 @@ private:
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#endif // __CARVER_MODELS_WHACK_MODEL_H
+#endif // __CARVER_MODELS_WHACK_DOMAIN_H

@@ -1,12 +1,12 @@
-// Brittle Sample Game "Carver" - Whack Model Implementation
+// Brittle Sample Game "Carver" - Whack Domain Implementation
 
 #include "CarverPch.h"
-#include "Models/WhackModel.h"
+#include "Models/WhackDomain.h"
 
 
 ///////////////////////////////////////////////////////////////////////////////
 //
-// Whack Model
+// Whack Domain
 //
 
 enum WhackState
@@ -16,8 +16,8 @@ enum WhackState
 };
 
 
-WhackModel::WhackModel()
-    : Machine( "WhackModel" )
+WhackDomain::WhackDomain()
+    : Machine( "WhackDomain" )
 {
     m_machine.AddState( WHACK_STATE_HIDDEN )
              .EnterAction( [=] { this->Hidden_Enter(); } );
@@ -29,12 +29,12 @@ WhackModel::WhackModel()
 }
 
 
-void WhackModel::Hidden_Enter()
+void WhackDomain::Hidden_Enter()
 {
 }
 
 
-void WhackModel::Appeared_Enter()
+void WhackDomain::Appeared_Enter()
 {
 }
 
