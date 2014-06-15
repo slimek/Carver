@@ -29,6 +29,15 @@
 			
 			"fontSize": 24,
 			"text": "Frame Clock"
+		},
+		
+		{
+			"type": "Button",
+			"name": "pauseButton",
+			"left": 60,
+			"y": 320,
+			
+			"normalPath": "texture/button-normal.png"
 		}
 	]
 }

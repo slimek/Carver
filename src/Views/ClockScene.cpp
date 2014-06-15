@@ -29,6 +29,8 @@ void ClockScene::OnEnterScene()
 
     m_panel->GetChild( "labelSecondClock", m_labelSecondClock );
     m_panel->GetChild( "labelFrameClock", m_labelFrameClock );
+
+    m_panel->SetClickHandler( "pauseButton", &ClockScene::OnPauseButton_Click, this );
 }
 
 
@@ -44,6 +46,17 @@ void ClockScene::OnUpdate()
 
         m_labelFrameClock->setString( Sprintf( "Frame elapsed: %f", frameClockElapsed.ToFloat() ));
     }
+}
+
+
+void ClockScene::OnPauseButton_Click( Ref* )
+{
+    if ( FrameClock::IsPaused() )
+    {
+        FrameClock::Resume();
+    }
+    else
+        FrameClock::Pause();
 }
 
 

@@ -31,6 +31,11 @@ private:
     void OnUpdate() override;
 
 
+    /// UI Events ///
+
+    void OnPauseButton_Click( Ref* sender );
+
+
     /// UI Componsnets ///
 
     Panel* m_panel;
