@@ -1,0 +1,34 @@
+{
+	"rect": "auto",
+	
+	"widgets":
+	[
+		{
+			"type": "Image",
+			"name": "background",
+			
+			"rect": "fill",
+			"imagePath": "texture/menu-background.jpg"
+		},
+		
+		{
+			"type": "Label",
+			"name": "labelSecondClock",
+			"left": 60,
+			"y": 400,
+			
+			"fontSize": 24,
+			"text": "Second Clock"
+		},
+
+		{
+			"type": "Label",
+			"name": "labelFrameClock",
+			"left": 60,
+			"y": 370,
+			
+			"fontSize": 24,
+			"text": "Frame Clock"
+		}
+	]
+}

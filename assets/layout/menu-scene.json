@@ -40,6 +40,18 @@
 					"fontSize": 24,
 					
 					"text": "Whack"
+				},
+				
+				{
+					"type": "LabelButton",
+					"name": "menuClock",
+					
+					"left": 20,
+					"y": 230,
+					
+					"fontSize": 24,
+					
+					"text": "Clock"
 				}
 			]
 		},

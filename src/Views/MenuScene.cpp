@@ -34,6 +34,7 @@ void MenuScene::OnEnterScene()
 
     m_panel->SetClickHandler( "enterButton", &MenuScene::OnEnterButton_Click, this );
     m_panel->SetClickHandler( "menuWhack", &MenuScene::OnMenuWhack_Click, this );
+    m_panel->SetClickHandler( "menuClock", &MenuScene::OnMenuClock_Click, this );
 
     CARAMEL_TRACE_INFO( "Scene Size: %s", ToString( this->getContentSize() ));
     CARAMEL_TRACE_INFO( "Panel Size: %s", ToString( m_panel->getContentSize() ));
@@ -57,6 +58,14 @@ void MenuScene::OnMenuWhack_Click( Ref* sender )
     CARAMEL_TRACE_INFO( "Whack Click!" );
 
     SimpleScene::ReplaceScene( SCENE_WHACK );
+}
+
+
+void MenuScene::OnMenuClock_Click( Ref* sender )
+{
+    CARAMEL_TRACE_INFO( "Clock Click!" );
+
+    SimpleScene::ReplaceScene( SCENE_CLOCK );
 }
 
 

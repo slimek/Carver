@@ -1,0 +1,50 @@
+// Brittle Sample Game "Carver" - Clock Scene Implementation
+
+#include "CarverPch.h"
+#include "Views/ClockScene.h"
+#include <Brittle/Ui/Panel.h>
+#include <ui/UIText.h>
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Clock Scene
+//
+
+ClockScene::ClockScene()
+    : m_panel( nullptr )
+    , m_labelSecondClock( nullptr )
+    , m_labelFrameClock( nullptr )
+    , m_secondClockStart( SecondClock::Now() )
+    , m_frameClockStart( FrameClock::Now() )
+    , m_labelsTimer( 0.125 )
+{
+}
+
+
+void ClockScene::OnEnterScene()
+{
+    m_panel = Panel::Create( "layout/clock-scene.json" );
+    this->addChild( m_panel );
+
+    m_panel->GetChild( "labelSecondClock", m_labelSecondClock );
+    m_panel->GetChild( "labelFrameClock", m_labelFrameClock );
+}
+
+
+void ClockScene::OnUpdate()
+{
+    if ( m_labelsTimer.TakeAndContinue() )
+    {
+        Seconds secondClockElapsed = SecondClock::Now() - m_secondClockStart;
+
+        m_labelSecondClock->setString( Sprintf( "Second elapsed: %f", secondClockElapsed.ToFloat() ));
+
+        Seconds frameClockElapsed = FrameClock::Now() - m_frameClockStart;
+
+        m_labelFrameClock->setString( Sprintf( "Frame elapsed: %f", frameClockElapsed.ToFloat() ));
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////

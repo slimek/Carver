@@ -4,6 +4,7 @@
 #include "CarverApp.h"
 
 #include "Models/WhackDomain.h"
+#include "Views/ClockScene.h"
 #include "Views/MenuScene.h"
 #include "Views/WhackScene.h"
 
@@ -29,6 +30,7 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
     {
     case SCENE_MENU:  return new MenuScene;
     case SCENE_WHACK: return new WhackScene( std::make_shared< WhackDomain >() );
+    case SCENE_CLOCK: return new ClockScene;
     }
 
     return nullptr;

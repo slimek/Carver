@@ -39,6 +39,9 @@
     <ClCompile Include="..\src\Models\WhackDomain.cpp">
       <Filter>3. Models</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Views\ClockScene.cpp">
+      <Filter>4. Views</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h">
@@ -61,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="..\src\Models\WhackDomain.h">
       <Filter>3. Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Views\ClockScene.h">
+      <Filter>4. Views</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
