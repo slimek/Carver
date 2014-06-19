@@ -2,6 +2,7 @@
 
 #include "CarverPch.h"
 #include "Models/WhackDomain.h"
+#include <Brittle/Core/FrameClock.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -15,15 +16,22 @@ enum WhackState
     WHACK_STATE_APPEARED,
 };
 
+enum WhackInnerEvent
+{
+    WHACK_EVENT_TIMER,
+};
+
 
 WhackDomain::WhackDomain()
     : Machine( "WhackDomain" )
 {
     m_machine.AddState( WHACK_STATE_HIDDEN )
-             .EnterAction( [=] { this->Hidden_Enter(); } );
+             .EnterAction( [=] { this->Hidden_Enter(); } )
+             .Transition( WHACK_EVENT_TIMER, WHACK_STATE_APPEARED );
 
     m_machine.AddState( WHACK_STATE_APPEARED )
-             .EnterAction( [=] { this->Appeared_Enter(); } );
+             .EnterAction( [=] { this->Appeared_Enter(); } )
+             .Transition( WHACK_EVENT_TIMER, WHACK_STATE_HIDDEN );
 
     m_machine.Initiate( WHACK_STATE_HIDDEN );
 }
@@ -31,11 +39,17 @@ WhackDomain::WhackDomain()
 
 void WhackDomain::Hidden_Enter()
 {
+    this->DispatchEvent( WHACK_EVENT_HIDE );
+
+    m_machine.StartTimer( Seconds( 3 ), WHACK_EVENT_TIMER );
 }
 
 
 void WhackDomain::Appeared_Enter()
 {
+    this->DispatchEvent( WHACK_EVENT_APPEAR );
+
+    m_machine.StartTimer( Seconds( 3 ), WHACK_EVENT_TIMER );
 }
 
 

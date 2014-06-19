@@ -27,6 +27,13 @@ private:
 };
 
 
+enum WhackEvent
+{
+    WHACK_EVENT_APPEAR,
+    WHACK_EVENT_HIDE,
+};
+
+
 ///////////////////////////////////////////////////////////////////////////////
 
 #endif // __CARVER_MODELS_WHACK_DOMAIN_H

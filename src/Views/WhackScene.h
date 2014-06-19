@@ -27,6 +27,13 @@ private:
 
     void OnEnterScene() override;
     void OnExitScene() override;
+    void OnUpdate() override;
+
+
+    /// Actions ///
+
+    void MoleAppear();
+    void MoleHide();
 
 
     /// UI Components ///

@@ -47,4 +47,46 @@ void WhackScene::OnExitScene()
 }
 
 
+void WhackScene::OnUpdate()
+{
+    AnyEvent event;
+    while ( m_events.TryPop( event ))
+    {
+        switch ( event.Id() )
+        {
+        case WHACK_EVENT_APPEAR:
+            this->MoleAppear();
+            break;
+
+        case WHACK_EVENT_HIDE:
+            this->MoleHide();
+            break;
+
+        default:
+            ;
+        }
+    }
+}
+
+
+void WhackScene::MoleAppear()
+{
+    CARAMEL_TRACE_INFO( "Appear" );
+
+    Vector< FiniteTimeAction* > actions;
+    actions.pushBack( MoveTo::create( 1, Vec2( 320, 400 )));
+    m_mole->runAction( Sequence::create( actions ));
+}
+
+
+void WhackScene::MoleHide()
+{
+    CARAMEL_TRACE_INFO( "Hide" );
+
+    Vector< FiniteTimeAction* > actions;
+    actions.pushBack( MoveTo::create( 1, Vec2( 320, 200 )));
+    m_mole->runAction( Sequence::create( actions ));
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////
