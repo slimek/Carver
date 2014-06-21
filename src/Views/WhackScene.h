@@ -7,7 +7,7 @@
 #include "CarverDefs.h"
 #include <Brittle/Core/SimpleScene.h>
 #include <Brittle/Ui/UiTypes.h>
-#include <Caramel/Async/AnyEventQueue.h>
+#include <Caramel/Statechart/StateMachine.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -19,14 +19,13 @@ class WhackScene : public SimpleScene
 {
 public:
 
-    explicit WhackScene( WhackDomainPtr model );
+    WhackScene();
 
 private:
 
     /// Scene Events ///
 
     void OnEnterScene() override;
-    void OnExitScene() override;
     void OnUpdate() override;
 
 
@@ -46,11 +45,15 @@ private:
     Sprite* m_mole;
 
 
-    /// MV Components ///
+    /// States ///
 
-    WhackDomainPtr m_domain;
+    void Title_Enter();
+    void Title_Exit();
+    void Start_Enter();
+    void Finish_Enter();
+    void Finish_Exit();
 
-    AnyEventQueue m_events;
+    Statechart::StateMachine m_machine;
 };
 
 

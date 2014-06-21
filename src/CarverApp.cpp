@@ -29,7 +29,7 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
     switch ( sceneId )
     {
     case SCENE_MENU:  return new MenuScene;
-    case SCENE_WHACK: return new WhackScene( std::make_shared< WhackDomain >() );
+    case SCENE_WHACK: return new WhackScene;
     case SCENE_CLOCK: return new ClockScene;
     }
 
