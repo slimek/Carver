@@ -3,6 +3,7 @@
 #include "CarverPch.h"
 #include "Views/WhackScene.h"
 #include "Models/WhackDomain.h"
+#include <Brittle/Actions/IntervalActions.h>
 #include <Brittle/Ui/Panel.h>
 
 
@@ -73,9 +74,8 @@ void WhackScene::MoleAppear()
 {
     CARAMEL_TRACE_INFO( "Appear" );
 
-    Vector< FiniteTimeAction* > actions;
-    actions.pushBack( MoveTo::create( 1, Vec2( 320, 400 )));
-    m_mole->runAction( Sequence::create( actions ));
+    m_mole->runAction(
+        Bta::MoveTo( 1, 320, 400 ));
 }
 
 
@@ -83,9 +83,8 @@ void WhackScene::MoleHide()
 {
     CARAMEL_TRACE_INFO( "Hide" );
 
-    Vector< FiniteTimeAction* > actions;
-    actions.pushBack( MoveTo::create( 1, Vec2( 320, 200 )));
-    m_mole->runAction( Sequence::create( actions ));
+    m_mole->runAction(
+        Bta::MoveTo( 1, 320, 200 ));
 }
 
 
