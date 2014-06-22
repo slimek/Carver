@@ -36,9 +36,6 @@
     <ClCompile Include="..\src\Views\WhackScene.cpp">
       <Filter>4. Views</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\Models\WhackDomain.cpp">
-      <Filter>3. Models</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\Views\ClockScene.cpp">
       <Filter>4. Views</Filter>
     </ClCompile>
@@ -61,9 +58,6 @@
     </ClInclude>
     <ClInclude Include="..\src\Types\Mole.h">
       <Filter>2. Types</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Models\WhackDomain.h">
-      <Filter>3. Models</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Views\ClockScene.h">
       <Filter>4. Views</Filter>

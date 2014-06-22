@@ -96,7 +96,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\src\Models\WhackDomain.cpp" />
     <ClCompile Include="..\src\Views\ClockScene.cpp" />
     <ClCompile Include="..\src\Views\MenuScene.cpp" />
     <ClCompile Include="..\src\Views\WhackScene.cpp" />
@@ -105,7 +104,6 @@
     <ClInclude Include="..\src\CarverApp.h" />
     <ClInclude Include="..\src\CarverDefs.h" />
     <ClInclude Include="..\src\CarverPch.h" />
-    <ClInclude Include="..\src\Models\WhackDomain.h" />
     <ClInclude Include="..\src\Types\Mole.h" />
     <ClInclude Include="..\src\Views\ClockScene.h" />
     <ClInclude Include="..\src\Views\MenuScene.h" />

@@ -3,7 +3,6 @@
 #include "CarverPch.h"
 #include "CarverApp.h"
 
-#include "Models/WhackDomain.h"
 #include "Views/ClockScene.h"
 #include "Views/MenuScene.h"
 #include "Views/WhackScene.h"
