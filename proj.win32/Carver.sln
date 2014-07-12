@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Carver", "Carver.vcxproj", "{5C55D7AE-D6CA-4100-9362-D43041FC5FAF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Brittle", "..\..\Brittle\proj.win32\Brittle.vcxproj", "{41283D12-4162-449D-8F7A-BEC4C994321E}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Caramel", "..\..\Caramel\proj.win32\Caramel_vc11.vcxproj", "{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcocos2d", "..\..\Cocos2d-x3\cocos\2d\cocos2d.vcxproj", "{98A51BA8-FC3A-415B-AC8F-8C7BD464E93E}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libchipmunk", "..\..\Cocos2d-x3\external\chipmunk\proj.win32\chipmunk.vcxproj", "{207BC7A9-CCF1-4F2F-A04D-45F72242AE25}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libExtensions", "..\..\Cocos2d-x3\extensions\proj.win32\libExtensions.vcxproj", "{21B2C324-891F-48EA-AD1A-5AE13DE12E28}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Caramel", "..\..\Caramel\proj.win32\Caramel.vcxproj", "{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,14 +39,6 @@ Global
 		{41283D12-4162-449D-8F7A-BEC4C994321E}.Release|Win32.ActiveCfg = Release|Win32
 		{41283D12-4162-449D-8F7A-BEC4C994321E}.Release|Win32.Build.0 = Release|Win32
 		{41283D12-4162-449D-8F7A-BEC4C994321E}.Release|x64.ActiveCfg = Release|Win32
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|Win32.ActiveCfg = Debug|Win32
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|Win32.Build.0 = Debug|Win32
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|x64.ActiveCfg = Debug|x64
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|x64.Build.0 = Debug|x64
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|Win32.ActiveCfg = Release|Win32
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|Win32.Build.0 = Release|Win32
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|x64.ActiveCfg = Release|x64
-		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|x64.Build.0 = Release|x64
 		{98A51BA8-FC3A-415B-AC8F-8C7BD464E93E}.Debug|Win32.ActiveCfg = Debug|Win32
 		{98A51BA8-FC3A-415B-AC8F-8C7BD464E93E}.Debug|Win32.Build.0 = Debug|Win32
 		{98A51BA8-FC3A-415B-AC8F-8C7BD464E93E}.Debug|x64.ActiveCfg = Debug|Win32
@@ -75,6 +69,14 @@ Global
 		{21B2C324-891F-48EA-AD1A-5AE13DE12E28}.Release|Win32.ActiveCfg = Release|Win32
 		{21B2C324-891F-48EA-AD1A-5AE13DE12E28}.Release|Win32.Build.0 = Release|Win32
 		{21B2C324-891F-48EA-AD1A-5AE13DE12E28}.Release|x64.ActiveCfg = Release|Win32
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|Win32.Build.0 = Debug|Win32
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|x64.ActiveCfg = Debug|x64
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Debug|x64.Build.0 = Debug|x64
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|Win32.ActiveCfg = Release|Win32
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|Win32.Build.0 = Release|Win32
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|x64.ActiveCfg = Release|x64
+		{ED63D1E4-3DE9-4273-A22A-8B558E1BD6C0}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
