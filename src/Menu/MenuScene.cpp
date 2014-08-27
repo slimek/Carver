@@ -1,7 +1,8 @@
 // Brittle Sample Game "Carver" - Menu Scene Implementation
 
 #include "CarverPch.h"
-#include "Views/MenuScene.h"
+#include "Menu/MenuScene.h"
+#include <Brittle/Ui/LabelButton.h>
 #include <Brittle/Ui/Panel.h>
 #include <Brittle/Utils/Geometry.h>
 #include <ui/UIImageView.h>
@@ -44,6 +45,12 @@ void MenuScene::OnEnterScene()
 
     CARAMEL_TRACE_INFO( "Menu Size: %s", ToString( menu->getContentSize() ));
     CARAMEL_TRACE_INFO( "Menu Pos : %s", ToString( menu->getPosition() ));
+
+    LabelButton* clock = nullptr;
+    menu->GetChild( "menuClock", clock );
+
+    CARAMEL_TRACE_INFO( "Clock Size: %s", ToString( clock->getContentSize() ));
+    CARAMEL_TRACE_INFO( "Clock Pos : %s", ToString( clock->getPosition() ));
 }
 
 

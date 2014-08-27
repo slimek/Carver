@@ -63,8 +63,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ws2_32.lib;opengl32.lib;glew32.lib;glfw3.lib;freetype250.lib;libwebp.lib;libtiff.lib;libpng.lib;libjpeg.lib;libzlib.lib;JsonCpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\CandyJar\lib\$(Platform).$(Configuration);$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;opengl32.lib;glew32.lib;glfw3.lib;freetype250.lib;libwebp.lib;libtiff.lib;libpng.lib;libjpeg.lib;libzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>libcmt.lib;msvcrt.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -84,8 +83,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>ws2_32.lib;opengl32.lib;glew32.lib;glfw3.lib;freetype250.lib;libwebp.lib;libtiff.lib;libpng.lib;libjpeg.lib;libzlib.lib;JsonCpp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\CandyJar\lib\$(Platform).$(Configuration);$(OutDir)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;opengl32.lib;glew32.lib;glfw3.lib;freetype250.lib;libwebp.lib;libtiff.lib;libpng.lib;libjpeg.lib;libzlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
     </Link>
   </ItemDefinitionGroup>
@@ -96,18 +94,18 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="..\src\Views\ClockScene.cpp" />
-    <ClCompile Include="..\src\Views\MenuScene.cpp" />
-    <ClCompile Include="..\src\Views\WhackScene.cpp" />
+    <ClCompile Include="..\src\Clock\ClockScene.cpp" />
+    <ClCompile Include="..\src\Menu\MenuScene.cpp" />
+    <ClCompile Include="..\src\Whack\WhackScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h" />
     <ClInclude Include="..\src\CarverDefs.h" />
     <ClInclude Include="..\src\CarverPch.h" />
-    <ClInclude Include="..\src\Types\Mole.h" />
-    <ClInclude Include="..\src\Views\ClockScene.h" />
-    <ClInclude Include="..\src\Views\MenuScene.h" />
-    <ClInclude Include="..\src\Views\WhackScene.h" />
+    <ClInclude Include="..\src\Clock\ClockScene.h" />
+    <ClInclude Include="..\src\Menu\MenuScene.h" />
+    <ClInclude Include="..\src\Whack\Mole.h" />
+    <ClInclude Include="..\src\Whack\WhackScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Brittle\proj.win32\Brittle.vcxproj">
@@ -130,6 +128,9 @@
     </ProjectReference>
     <ProjectReference Include="..\..\Cocos2d-x3\external\chipmunk\proj.win32\chipmunk.vcxproj">
       <Project>{207bc7a9-ccf1-4f2f-a04d-45f72242ae25}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Macaron\proj.win32\Macaron.vcxproj">
+      <Project>{44fb086b-debb-4312-ba57-64052a3fc8d8}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

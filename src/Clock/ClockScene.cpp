@@ -1,7 +1,7 @@
 // Brittle Sample Game "Carver" - Clock Scene Implementation
 
 #include "CarverPch.h"
-#include "Views/ClockScene.h"
+#include "Clock/ClockScene.h"
 #include <Brittle/Ui/Panel.h>
 #include <ui/UIText.h>
 

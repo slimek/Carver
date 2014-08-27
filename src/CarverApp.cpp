@@ -3,9 +3,9 @@
 #include "CarverPch.h"
 #include "CarverApp.h"
 
-#include "Views/ClockScene.h"
-#include "Views/MenuScene.h"
-#include "Views/WhackScene.h"
+#include "Clock/ClockScene.h"
+#include "Menu/MenuScene.h"
+#include "Whack/WhackScene.h"
 
 
 void CarverApp::OnLaunch()
