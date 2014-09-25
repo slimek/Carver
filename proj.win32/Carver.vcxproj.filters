@@ -5,9 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="5. Precompiled Header">
-      <UniqueIdentifier>{444498c1-8c7a-497b-be96-2c8c72e665c3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="2. Menu">
       <UniqueIdentifier>{11ccc916-da1a-44a3-a17f-ec3c6916c127}</UniqueIdentifier>
     </Filter>
@@ -19,6 +16,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="x. Precompiled Header">
+      <UniqueIdentifier>{444498c1-8c7a-497b-be96-2c8c72e665c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="5. Bola">
+      <UniqueIdentifier>{c7f8b031-39bc-4733-858c-07b48f2db8d4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp">
@@ -28,7 +31,7 @@
       <Filter>1. Win32 App</Filter>
     </ClCompile>
     <ClCompile Include="..\src\CarverPch.cpp">
-      <Filter>5. Precompiled Header</Filter>
+      <Filter>x. Precompiled Header</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Menu\MenuScene.cpp">
       <Filter>2. Menu</Filter>
@@ -39,6 +42,9 @@
     <ClCompile Include="..\src\Whack\WhackScene.cpp">
       <Filter>4. Whack</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\Bola\BolaScene.cpp">
+      <Filter>5. Bola</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h">
@@ -48,7 +54,7 @@
       <Filter>1. Win32 App</Filter>
     </ClInclude>
     <ClInclude Include="..\src\CarverPch.h">
-      <Filter>5. Precompiled Header</Filter>
+      <Filter>x. Precompiled Header</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Menu\MenuScene.h">
       <Filter>2. Menu</Filter>
@@ -61,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="..\src\Whack\WhackScene.h">
       <Filter>4. Whack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Bola\BolaScene.h">
+      <Filter>5. Bola</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
