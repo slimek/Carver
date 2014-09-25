@@ -1,7 +1,7 @@
 // Brittle Sample Game "Carver" - Mole Header
 
-#ifndef __CARVER_TYPES_MOLE_H
-#define __CARVER_TYPES_MOLE_H
+#ifndef __CARVER_WHACK_MOLE_H
+#define __CARVER_WHACK_MOLE_H
 #pragma once
 
 #include "CarverDefs.h"
@@ -14,4 +14,4 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#endif // __CARVER_TYPES_MOLE_H
+#endif // __CARVER_WHACK_MOLE_H

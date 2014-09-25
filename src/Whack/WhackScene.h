@@ -1,7 +1,7 @@
 // Brittle Sample Game "Carver" - Whack Scene Header
 
-#ifndef __CARVER_VIEWS_WHACK_SCENE_H
-#define __CARVER_VIEWS_WHACK_SCENE_H
+#ifndef __CARVER_WHACK_WHACK_SCENE_H
+#define __CARVER_WHACK_WHACK_SCENE_H
 #pragma once
 
 #include "CarverDefs.h"
@@ -59,4 +59,4 @@ private:
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#endif // __CARVER_VIEWS_WHACK_SCENE_H
+#endif // __CARVER_WHACK_WHACK_SCENE_H

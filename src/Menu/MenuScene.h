@@ -1,7 +1,7 @@
 // Brittle Sample Game "Carver" - Menu Scene Header
 
-#ifndef __CARVER_VIEWS_MENU_SCENE_H
-#define __CARVER_VIEWS_MENU_SCENE_H
+#ifndef __CARVER_MENU_MENU_SCENE_H
+#define __CARVER_MENU_MENU_SCENE_H
 #pragma once
 
 #include "CarverDefs.h"
@@ -46,4 +46,4 @@ private:
 
 ///////////////////////////////////////////////////////////////////////////////
 
-#endif // __CARVER_VIEWS_MENU_SCENE_H
+#endif // __CARVER_MENU_MENU_SCENE_H
