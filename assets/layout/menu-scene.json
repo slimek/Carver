@@ -52,6 +52,18 @@
 					"fontSize": 24,
 					
 					"text": "Clock"
+				},
+				
+				{
+					"type": "LabelButton",
+					"name": "menuBola",
+					
+					"left": 20,
+					"y": 200,
+					
+					"fontSize": 24,
+					
+					"text": "Bola"
 				}
 			]
 		},

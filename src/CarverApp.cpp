@@ -3,6 +3,7 @@
 #include "CarverPch.h"
 #include "CarverApp.h"
 
+#include "Bola/BolaScene.h"
 #include "Clock/ClockScene.h"
 #include "Menu/MenuScene.h"
 #include "Whack/WhackScene.h"
@@ -30,6 +31,7 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
     case SCENE_MENU:  return new MenuScene;
     case SCENE_WHACK: return new WhackScene;
     case SCENE_CLOCK: return new ClockScene;
+    case SCENE_BOLA:  return new BolaScene;
     }
 
     return nullptr;
