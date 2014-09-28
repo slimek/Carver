@@ -25,6 +25,7 @@ CARVER_SRC := ../../src
 LOCAL_SRC_FILES := \
 	$(CARVER_SRC)/CarverPch.cpp \
 	$(CARVER_SRC)/CarverApp.cpp \
+	$(CARVER_SRC)/Bola/BolaScene.cpp \
 	$(CARVER_SRC)/Clock/ClockScene.cpp \
 	$(CARVER_SRC)/Menu/MenuScene.cpp \
 	$(CARVER_SRC)/Whack/WhackScene.cpp \
