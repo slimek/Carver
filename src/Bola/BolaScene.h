@@ -18,6 +18,12 @@
 
 class BolaScene : public SimpleScene
 {
+private:
+
+    /// Scene Events ///
+
+    void OnEnterScene() override;
+
 };
 
 

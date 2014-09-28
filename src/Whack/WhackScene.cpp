@@ -52,14 +52,9 @@ WhackScene::WhackScene()
 
 void WhackScene::OnEnterScene()
 {
-    auto background = Sprite::create( "texture/green-grid.png" );
-    //Stretch( background, this, STRETCH_FILL, ALIGN_MIDDLE_CENTER );
-    this->addChild( background );
-
     auto title = Sprite::create( "texture/whack-title.png" );
-    //Locate( title, this, 
-
-
+    this->addChild( title, 1 );
+    
     m_panel = Panel::Create( "layout/whack-scene.json" );
     this->addChild( m_panel );
 
