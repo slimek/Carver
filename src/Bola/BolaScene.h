@@ -23,10 +23,18 @@ private:
     /// Scene Events ///
 
     void OnEnterScene() override;
-
-    /// Keyboard Events ///
-
     void OnBackKeyPressed() override;
+
+    /// Touch Events ///
+
+    Bool OnTouchBegan( Touch* touch, Event* event );
+    void OnTouchMoved( Touch* touch, Event* event );
+
+    /// Members ///
+
+    Sprite* m_ball { nullptr };
+    Bool m_ballTouched { false };
+    Vec2 m_ballStartPosition;
 };
 
 
