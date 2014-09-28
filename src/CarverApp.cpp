@@ -5,6 +5,7 @@
 
 #include "Bola/BolaScene.h"
 #include "Clock/ClockScene.h"
+#include "Gems/GemsScene.h"
 #include "Menu/MenuScene.h"
 #include "Whack/WhackScene.h"
 
@@ -32,6 +33,7 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
     case SCENE_WHACK: return new WhackScene;
     case SCENE_CLOCK: return new ClockScene;
     case SCENE_BOLA:  return new BolaScene;
+    case SCENE_GEMS:  return new GemsScene;
     }
 
     return nullptr;

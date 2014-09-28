@@ -22,6 +22,9 @@
     <Filter Include="5. Bola">
       <UniqueIdentifier>{c7f8b031-39bc-4733-858c-07b48f2db8d4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="6. Gems">
+      <UniqueIdentifier>{3f937b67-8a28-4b5f-848b-5501b76cc15b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="..\src\Bola\BolaScene.cpp">
       <Filter>5. Bola</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Gems\GemsScene.cpp">
+      <Filter>6. Gems</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +76,9 @@
     </ClInclude>
     <ClInclude Include="..\src\Bola\BolaScene.h">
       <Filter>5. Bola</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Gems\GemsScene.h">
+      <Filter>6. Gems</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -64,6 +64,18 @@
 					"fontSize": 24,
 					
 					"text": "Bola"
+				},
+
+				{
+					"type": "LabelButton",
+					"name": "menuGems",
+					
+					"left": 20,
+					"y": 170,
+					
+					"fontSize": 24,
+					
+					"text": "Gems"
 				}
 			]
 		},

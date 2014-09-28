@@ -27,6 +27,7 @@ LOCAL_SRC_FILES := \
 	$(CARVER_SRC)/CarverApp.cpp \
 	$(CARVER_SRC)/Bola/BolaScene.cpp \
 	$(CARVER_SRC)/Clock/ClockScene.cpp \
+	$(CARVER_SRC)/Gems/GemsScene.cpp \
 	$(CARVER_SRC)/Menu/MenuScene.cpp \
 	$(CARVER_SRC)/Whack/WhackScene.cpp \
 	$(CARVER_SRC).android/NativeInit.cpp

@@ -22,6 +22,7 @@ enum SceneId
     SCENE_WHACK = 2,
     SCENE_CLOCK = 3,
     SCENE_BOLA  = 4,
+    SCENE_GEMS  = 5,
 };
 
 
