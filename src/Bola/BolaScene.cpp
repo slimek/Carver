@@ -21,7 +21,7 @@ void BolaScene::OnEnterScene()
 }
 
 
-void BolaScene::OnBackPressed()
+void BolaScene::OnBackKeyPressed()
 {
     SimpleScene::ReplaceScene( SCENE_MENU );
 }
