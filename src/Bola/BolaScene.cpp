@@ -19,3 +19,9 @@ void BolaScene::OnEnterScene()
 
     Locate( ball ).Center();
 }
+
+
+void BolaScene::OnBackPressed()
+{
+    SimpleScene::ReplaceScene( SCENE_MENU );
+}
