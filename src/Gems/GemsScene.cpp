@@ -56,15 +56,16 @@ void GemsScene::OnBackKeyPressed()
 void GemsScene::StartGemsActions()
 {
     m_ruby->setScale( 0 );
+    m_sapphire->setScale( 0 );
+    m_emerald->setScale( 0 );
+    m_diamond->setScale( 0 );
 
-    //auto actions = Bta::ScaleTo( 1, 1 ) + Bta::RotateBy( 1, 360 );
-    auto rotate = Bta::RotateBy( 1, 360 );
+    auto actions = Bta::ScaleTo( 1, 1 ) + Bta::RotateBy( 1, 360 );
 
     this->runAction(
-        Bta::ScaleTo( 1, 1 ).Target( m_ruby ) >>
-        rotate.Clone().Target( m_ruby ) >>
-        rotate.Clone().Target( m_sapphire ) >>
-        rotate.Clone().Target( m_emerald ) >>
-        rotate.Clone().Target( m_diamond )
+        actions.Clone().Target( m_ruby ) >>
+        actions.Clone().Target( m_sapphire ) >>
+        actions.Clone().Target( m_emerald ) >>
+        actions.Clone().Target( m_diamond )
     );
 }
