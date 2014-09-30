@@ -38,6 +38,8 @@ void GemsScene::OnEnterScene()
 
     Locate( m_diamond ).FromBottom( 200 ).FromRight( 160 );
 
+    // Put all gems on the vector
+    m_gems = { m_ruby, m_sapphire, m_emerald, m_diamond };
 
     this->StartGemsActions();
 }
@@ -55,10 +57,10 @@ void GemsScene::OnBackKeyPressed()
 
 void GemsScene::StartGemsActions()
 {
-    m_ruby->setScale( 0 );
-    m_sapphire->setScale( 0 );
-    m_emerald->setScale( 0 );
-    m_diamond->setScale( 0 );
+    for ( auto gem : m_gems )
+    {
+        gem->setScale( 0 );
+    }
 
     auto actions = [] ( Node* target )
     {

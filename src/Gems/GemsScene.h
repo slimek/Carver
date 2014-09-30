@@ -6,6 +6,7 @@
 
 #include "CarverDefs.h"
 #include <Brittle/Core/SimpleScene.h>
+#include <vector>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -38,6 +39,8 @@ private:
     Sprite* m_sapphire { nullptr };
     Sprite* m_emerald { nullptr };
     Sprite* m_diamond { nullptr };
+
+    std::vector< Sprite* > m_gems;
 };
 
 
