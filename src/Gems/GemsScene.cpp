@@ -21,22 +21,22 @@ void GemsScene::OnEnterScene()
     m_ruby = Sprite::create( "texture/ruby.png" );
     this->addChild( m_ruby );
 
-    Locate( m_ruby ).FromTop( 160 ).FromLeft( 160 );
+    Locate( m_ruby ).FromLeftTop( 160, 160 );
 
     m_sapphire = Sprite::create( "texture/sapphire.png" );
     this->addChild( m_sapphire );
 
-    Locate( m_sapphire ).FromTop( 160 ).FromRight( 160 );
+    Locate( m_sapphire ).FromRightTop( 160, 160 );
 
     m_emerald = Sprite::create( "texture/emerald.png" );
     this->addChild( m_emerald );
 
-    Locate( m_emerald ).FromBottom( 200 ).FromLeft( 160 );
+    Locate( m_emerald ).FromLeftBottom( 160, 200 );
 
     m_diamond = Sprite::create( "texture/diamond.png" );
     this->addChild( m_diamond );
 
-    Locate( m_diamond ).FromBottom( 200 ).FromRight( 160 );
+    Locate( m_diamond ).FromRightBottom( 160, 200 );
 
     // Put all gems on the vector
     m_gems = { m_ruby, m_sapphire, m_emerald, m_diamond };
