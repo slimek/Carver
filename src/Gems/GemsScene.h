@@ -6,6 +6,7 @@
 
 #include "CarverDefs.h"
 #include <Brittle/Core/SimpleScene.h>
+#include <Brittle/Nodes/EllipseTouchable.h>
 #include <vector>
 
 
@@ -41,6 +42,8 @@ private:
     Sprite* m_diamond { nullptr };
 
     std::vector< Sprite* > m_gems;
+
+    EllipseTouchable* m_rubyTouch { nullptr };
 };
 
 

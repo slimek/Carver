@@ -1,0 +1,11 @@
+{
+	"ruby": {
+		"image": "texture/ruby.png",
+		"position": [ "fromLeftTop", 160, 160 ]
+	},
+	
+	"sapphire": {
+		"image": "texture/sapphire.png",
+		"position": [ "fromRightTop", 160, 160 ]
+	}
+}

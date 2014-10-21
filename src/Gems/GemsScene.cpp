@@ -4,8 +4,10 @@
 #include "Gems/GemsScene.h"
 
 #include <Brittle/Actions/IntervalActions.h>
+#include <Brittle/Layout/LayoutJson.h>
 #include <Brittle/Layout/Locate.h>
 #include <Brittle/Layout/Stretch.h>
+#include <Brittle/Nodes/EllipseTouchable.h>
 
 
 void GemsScene::OnEnterScene()
@@ -18,15 +20,19 @@ void GemsScene::OnEnterScene()
 
     /// Place Gems ///
 
-    m_ruby = Sprite::create( "texture/ruby.png" );
-    this->addChild( m_ruby );
+    /// Part 1 : Locate sprites by JSON layout ///
 
-    Locate( m_ruby ).FromLeftTop( 160, 160 );
+    LayoutJson layout( "layout/gems-scene.json" );
 
-    m_sapphire = Sprite::create( "texture/sapphire.png" );
-    this->addChild( m_sapphire );
+    m_ruby = layout.AddSprite( this, "ruby" );
 
-    Locate( m_sapphire ).FromRightTop( 160, 160 );
+    m_rubyTouch = EllipseTouchable::Create();
+    m_ruby->addChild( m_rubyTouch );
+
+    m_sapphire = layout.AddSprite( this, "sapphire" );
+    
+
+    /// Part 2 : Locat sprites by code ///
 
     m_emerald = Sprite::create( "texture/emerald.png" );
     this->addChild( m_emerald );
@@ -62,7 +68,9 @@ void GemsScene::StartGemsActions()
         gem->setScale( 0 );
     }
 
-    auto actions = [] ( Node* target )
+    m_rubyTouch->Clear();
+
+    auto actions = [] ( Node* target, EllipseTouchable* touch )
     {
         return
         (
@@ -73,7 +81,7 @@ void GemsScene::StartGemsActions()
     };
 
     this->runAction(
-        actions( m_ruby ) >> actions( m_sapphire ) >>
-        actions( m_emerald ) >> actions( m_diamond )
+        actions( m_ruby, m_rubyTouch ) >> actions( m_sapphire, m_rubyTouch ) >>
+        actions( m_emerald, m_rubyTouch ) >> actions( m_diamond, m_rubyTouch )
     );
 }
