@@ -45,4 +45,13 @@ LOCAL_LDLIBS := \
 	
 
 include $(BUILD_SHARED_LIBRARY)
-	
+
+
+#
+# Import other dependencies
+#
+ 
+$(call import-add-path,$(GIT_ROOT)/)
+$(call import-module,Brittle/proj.android/jni)
+$(call import-module,Macaron/proj.android/jni)
+$(call import-module,Caramel/proj.android/jni)
