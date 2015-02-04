@@ -3,6 +3,7 @@
 #include "CarverPch.h"
 #include "Flappy/FlappyScene.h"
 
+#include <Brittle/Layout/Locate.h>
 #include <Brittle/Layout/Stretch.h>
 
 
@@ -12,6 +13,18 @@ void FlappyScene::OnEnterScene()
     this->addChild( background );
 
     Stretch( background ).Fill();
+
+    const auto scale = background->getScaleX();
+
+
+    /// Put the Bird at the center ///
+
+    auto bird = Sprite::create( "texture/flappy/bird-0.png" );
+    bird->setScale( scale );
+    bird->getTexture()->setAliasTexParameters();
+    this->addChild( bird );
+
+    Locate( bird ).Center();
 }
 
 
