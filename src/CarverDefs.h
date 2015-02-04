@@ -18,11 +18,12 @@ using namespace Caramel;
 
 enum SceneId
 {
-    SCENE_MENU  = 1,
-    SCENE_WHACK = 2,
-    SCENE_CLOCK = 3,
-    SCENE_BOLA  = 4,
-    SCENE_GEMS  = 5,
+    SCENE_MENU   = 1,
+    SCENE_WHACK  = 2,
+    SCENE_CLOCK  = 3,
+    SCENE_BOLA   = 4,
+    SCENE_GEMS   = 5,
+    SCENE_FLAPPY = 6,
 };
 
 

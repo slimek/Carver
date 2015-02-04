@@ -8,6 +8,7 @@
 #include "Gems/GemsScene.h"
 #include "Menu/MenuScene.h"
 #include "Whack/WhackScene.h"
+#include "Flappy/FlappyScene.h"
 
 
 void CarverApp::OnLaunch()
@@ -29,11 +30,12 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
 {
     switch ( sceneId )
     {
-    case SCENE_MENU:  return new MenuScene;
-    case SCENE_WHACK: return new WhackScene;
-    case SCENE_CLOCK: return new ClockScene;
-    case SCENE_BOLA:  return new BolaScene;
-    case SCENE_GEMS:  return new GemsScene;
+    case SCENE_MENU:   return new MenuScene;
+    case SCENE_WHACK:  return new WhackScene;
+    case SCENE_CLOCK:  return new ClockScene;
+    case SCENE_BOLA:   return new BolaScene;
+    case SCENE_GEMS:   return new GemsScene;
+    case SCENE_FLAPPY: return new FlappyScene;
     }
 
     return nullptr;

@@ -76,6 +76,18 @@
 					"fontSize": 24,
 					
 					"text": "Gems"
+				},
+				
+				{
+					"type": "LabelButton",
+					"name": "menuFlappy",
+					
+					"left": 20,
+					"y": 140,
+					
+					"fontSize": 24,
+					
+					"text": "Flappy"
 				}
 			]
 		},

@@ -37,8 +37,9 @@ void MenuScene::OnEnterScene()
     m_panel->SetClickHandler( "menuWhack", &MenuScene::OnMenuWhack_Click, this );
     m_panel->SetClickHandler( "menuClock", &MenuScene::OnMenuClock_Click, this );
 
-    m_panel->SetClickHandler( "menuBola", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_BOLA ); });
-    m_panel->SetClickHandler( "menuGems", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_GEMS ); });
+    m_panel->SetClickHandler( "menuBola",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_BOLA ); });
+    m_panel->SetClickHandler( "menuGems",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_GEMS ); });
+    m_panel->SetClickHandler( "menuFlappy", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_FLAPPY ); });
 
 
     CARAMEL_TRACE_INFO( "Scene Size: %s", ToString( this->getContentSize() ));

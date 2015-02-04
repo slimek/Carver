@@ -1,84 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="1. Win32 App">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="2. Menu">
-      <UniqueIdentifier>{11ccc916-da1a-44a3-a17f-ec3c6916c127}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="3. Clock">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="4. Whack">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="x. Precompiled Header">
       <UniqueIdentifier>{444498c1-8c7a-497b-be96-2c8c72e665c3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="5. Bola">
+    <Filter Include="0. Win32 App">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="1. Menu">
+      <UniqueIdentifier>{11ccc916-da1a-44a3-a17f-ec3c6916c127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Clock">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="3. Whack">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="4. Bola">
       <UniqueIdentifier>{c7f8b031-39bc-4733-858c-07b48f2db8d4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="6. Gems">
+    <Filter Include="5. Gems">
       <UniqueIdentifier>{3f937b67-8a28-4b5f-848b-5501b76cc15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="6. Flappy">
+      <UniqueIdentifier>{39215fda-03a6-42b4-8b29-2bc64ce12b5a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp">
-      <Filter>1. Win32 App</Filter>
+      <Filter>0. Win32 App</Filter>
     </ClCompile>
     <ClCompile Include="..\src\CarverApp.cpp">
-      <Filter>1. Win32 App</Filter>
+      <Filter>0. Win32 App</Filter>
     </ClCompile>
     <ClCompile Include="..\src\CarverPch.cpp">
       <Filter>x. Precompiled Header</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Menu\MenuScene.cpp">
-      <Filter>2. Menu</Filter>
+      <Filter>1. Menu</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Clock\ClockScene.cpp">
-      <Filter>3. Clock</Filter>
+      <Filter>2. Clock</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Whack\WhackScene.cpp">
-      <Filter>4. Whack</Filter>
+      <Filter>3. Whack</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Bola\BolaScene.cpp">
-      <Filter>5. Bola</Filter>
+      <Filter>4. Bola</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Gems\GemsScene.cpp">
-      <Filter>6. Gems</Filter>
+      <Filter>5. Gems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Flappy\FlappyScene.cpp">
+      <Filter>6. Flappy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\CarverApp.h">
-      <Filter>1. Win32 App</Filter>
+      <Filter>0. Win32 App</Filter>
     </ClInclude>
     <ClInclude Include="..\src\CarverDefs.h">
-      <Filter>1. Win32 App</Filter>
+      <Filter>0. Win32 App</Filter>
     </ClInclude>
     <ClInclude Include="..\src\CarverPch.h">
       <Filter>x. Precompiled Header</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Menu\MenuScene.h">
-      <Filter>2. Menu</Filter>
+      <Filter>1. Menu</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Clock\ClockScene.h">
-      <Filter>3. Clock</Filter>
+      <Filter>2. Clock</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Whack\Mole.h">
-      <Filter>4. Whack</Filter>
+      <Filter>3. Whack</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Whack\WhackScene.h">
-      <Filter>4. Whack</Filter>
+      <Filter>3. Whack</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Bola\BolaScene.h">
-      <Filter>5. Bola</Filter>
+      <Filter>4. Bola</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Gems\GemsScene.h">
-      <Filter>6. Gems</Filter>
+      <Filter>5. Gems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Flappy\FlappyScene.h">
+      <Filter>6. Flappy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
