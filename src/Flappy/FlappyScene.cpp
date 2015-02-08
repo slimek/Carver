@@ -10,6 +10,8 @@
 
 void FlappyScene::OnEnterScene()
 {
+    /// Background ///
+
     auto background = Sprite::create( "texture/flappy/sky.png" );
     this->addChild( background );
 
@@ -34,6 +36,13 @@ void FlappyScene::OnEnterScene()
                    .Build();
 
     bird->runAction( RepeatForever::create( Animate::create( birdAnim )));
+
+
+    /// Attach a physics body to bird ///
+
+    auto birdBody = PhysicsBody::create();
+    birdBody->setDynamic( true );
+    bird->setPhysicsBody( birdBody );
 }
 
 
