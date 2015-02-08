@@ -30,12 +30,12 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
 {
     switch ( sceneId )
     {
-    case SCENE_MENU:   return new MenuScene;
-    case SCENE_WHACK:  return new WhackScene;
-    case SCENE_CLOCK:  return new ClockScene;
-    case SCENE_BOLA:   return new BolaScene;
-    case SCENE_GEMS:   return new GemsScene;
-    case SCENE_FLAPPY: return new FlappyScene;
+    case SCENE_MENU:   return SimpleScene::Create< MenuScene >();
+    case SCENE_WHACK:  return SimpleScene::Create< WhackScene >();
+    case SCENE_CLOCK:  return SimpleScene::Create< ClockScene >();
+    case SCENE_BOLA:   return SimpleScene::Create< BolaScene >();
+    case SCENE_GEMS:   return SimpleScene::Create< GemsScene >();
+    case SCENE_FLAPPY: return SimpleScene::CreateWithPhysics< FlappyScene >();
     }
 
     return nullptr;
