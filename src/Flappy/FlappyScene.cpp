@@ -6,7 +6,25 @@
 #include <Brittle/Animation/FlipbookAnimation.h>
 #include <Brittle/Layout/Locate.h>
 #include <Brittle/Layout/Stretch.h>
+#include <Brittle/Utils/Geometry.h>
 
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Constants
+//
+
+// Original size, would be scaled.
+static const Float BIRD_HEIGHT = 12;
+
+// Forces
+static const Float GRAVITY = -300;  // More powerful than the default.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Build the Scene
+//
 
 void FlappyScene::OnEnterScene()
 {
@@ -22,7 +40,7 @@ void FlappyScene::OnEnterScene()
 
     /// Put the Bird at the center, with animation ///
 
-    auto bird = Sprite::create();
+    auto bird = Sprite::create( "texture/flappy/bird-0.png" );
     bird->setScale( scale );
     this->addChild( bird );
 
@@ -38,11 +56,25 @@ void FlappyScene::OnEnterScene()
     bird->runAction( RepeatForever::create( Animate::create( birdAnim )));
 
 
-    /// Attach a physics body to bird ///
+    /// Place the Floor at the bottom ///
 
-    auto birdBody = PhysicsBody::create();
-    birdBody->setDynamic( true );
+    auto floor = Sprite::create( "texture/flappy/floor.png" );
+    floor->setScale( scale );
+    this->addChild( floor );
+
+    Locate( floor ).CenterX().FromBottom( 0 );
+
+
+    /// Physics Settings ///
+
+    this->getPhysicsWorld()->setGravity( Vec2( 0, GRAVITY ));
+
+    auto birdBody = PhysicsBody::createCircle( BIRD_HEIGHT * scale / 2 );
     bird->setPhysicsBody( birdBody );
+
+    auto floorBody = PhysicsBody::createBox( floor->getBoundingBox().size );
+    floorBody->setDynamic( false );
+    floor->setPhysicsBody( floorBody );
 }
 
 
