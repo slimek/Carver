@@ -9,15 +9,23 @@
 
 void BolaScene::OnEnterScene()
 {
-    auto background = Sprite::create( "texture/blue-grid.png" );
+    /// Background - Repeat the Tile ///
+
+    auto background = Sprite::create( "texture/blue-tile.png" );
     this->addChild( background );
 
-    Stretch( background ).Fill();
+    Stretch( background ).Repeat();
+
+
+    /// Put the Ball at the center ///
 
     m_ball = Sprite::create( "texture/basketball.png" );
     this->addChild( m_ball );
 
     Locate( m_ball ).Center();
+
+
+    /// Touch Events ///
 
     auto listener = EventListenerTouchOneByOne::create();
     listener->setSwallowTouches( true );
