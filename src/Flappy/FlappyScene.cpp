@@ -40,7 +40,7 @@ void FlappyScene::OnEnterScene()
 
     /// Put the Bird at the center, with animation ///
 
-    auto bird = Sprite::create( "texture/flappy/bird-0.png" );
+    auto bird = Sprite::create();
     bird->setScale( scale );
     this->addChild( bird );
 
