@@ -40,11 +40,11 @@ void ClockScene::OnUpdate()
     {
         Seconds secondClockElapsed = SecondClock::Now() - m_secondClockStart;
 
-        m_labelSecondClock->setString( Sprintf( "Second elapsed: %f", secondClockElapsed.ToFloat() ));
+        m_labelSecondClock->setString( Format( "Second elapsed: {0}", secondClockElapsed.ToFloat() ));
 
         Seconds frameClockElapsed = FrameClock::Now() - m_frameClockStart;
 
-        m_labelFrameClock->setString( Sprintf( "Frame elapsed: %f", frameClockElapsed.ToFloat() ));
+        m_labelFrameClock->setString( Format( "Frame elapsed: {0}", frameClockElapsed.ToFloat() ));
     }
 }
 
