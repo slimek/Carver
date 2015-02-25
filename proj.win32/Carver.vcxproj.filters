@@ -11,14 +11,6 @@
     <Filter Include="1. Menu">
       <UniqueIdentifier>{11ccc916-da1a-44a3-a17f-ec3c6916c127}</UniqueIdentifier>
     </Filter>
-    <Filter Include="2. Clock">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="3. Whack">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="4. Bola">
       <UniqueIdentifier>{c7f8b031-39bc-4733-858c-07b48f2db8d4}</UniqueIdentifier>
     </Filter>
@@ -27,6 +19,14 @@
     </Filter>
     <Filter Include="6. Flappy">
       <UniqueIdentifier>{39215fda-03a6-42b4-8b29-2bc64ce12b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3. Clock">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="2. Whack">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -43,10 +43,10 @@
       <Filter>1. Menu</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Clock\ClockScene.cpp">
-      <Filter>2. Clock</Filter>
+      <Filter>3. Clock</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Whack\WhackScene.cpp">
-      <Filter>3. Whack</Filter>
+      <Filter>2. Whack</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Bola\BolaScene.cpp">
       <Filter>4. Bola</Filter>
@@ -72,13 +72,13 @@
       <Filter>1. Menu</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Clock\ClockScene.h">
-      <Filter>2. Clock</Filter>
+      <Filter>3. Clock</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Whack\Mole.h">
-      <Filter>3. Whack</Filter>
+      <Filter>2. Whack</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Whack\WhackScene.h">
-      <Filter>3. Whack</Filter>
+      <Filter>2. Whack</Filter>
     </ClInclude>
     <ClInclude Include="..\src\Bola\BolaScene.h">
       <Filter>4. Bola</Filter>

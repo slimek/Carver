@@ -83,6 +83,12 @@ void WhackScene::OnUpdate()
 }
 
 
+void WhackScene::OnBackKeyPressed()
+{
+    SimpleScene::ReplaceScene( SCENE_MENU );
+}
+
+
 void WhackScene::Title_Enter()
 {
 }

@@ -49,6 +49,12 @@ void ClockScene::OnUpdate()
 }
 
 
+void ClockScene::OnBackKeyPressed()
+{
+    SimpleScene::ReplaceScene( SCENE_MENU );
+}
+
+
 void ClockScene::OnPauseButton_Click( Ref* )
 {
     if ( FrameClock::IsPaused() )
