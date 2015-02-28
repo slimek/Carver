@@ -42,20 +42,20 @@ void MenuScene::OnEnterScene()
     m_panel->SetClickHandler( "menuFlappy", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_FLAPPY ); });
 
 
-    CARAMEL_TRACE_INFO( "Scene Size: %s", ToString( this->getContentSize() ));
-    CARAMEL_TRACE_INFO( "Panel Size: %s", ToString( m_panel->getContentSize() ));
+    CARAMEL_TRACE_INFO( "Scene Size: {0}", ToString( this->getContentSize() ));
+    CARAMEL_TRACE_INFO( "Panel Size: {0}", ToString( m_panel->getContentSize() ));
 
     Panel* menu = nullptr;
     m_panel->GetChild( "menuPanel", menu );
 
-    CARAMEL_TRACE_INFO( "Menu Size: %s", ToString( menu->getContentSize() ));
-    CARAMEL_TRACE_INFO( "Menu Pos : %s", ToString( menu->getPosition() ));
+    CARAMEL_TRACE_INFO( "Menu Size: {0}", ToString( menu->getContentSize() ));
+    CARAMEL_TRACE_INFO( "Menu Pos : {0}", ToString( menu->getPosition() ));
 
     LabelButton* clock = nullptr;
     menu->GetChild( "menuClock", clock );
 
-    CARAMEL_TRACE_INFO( "Clock Size: %s", ToString( clock->getContentSize() ));
-    CARAMEL_TRACE_INFO( "Clock Pos : %s", ToString( clock->getPosition() ));
+    CARAMEL_TRACE_INFO( "Clock Size: {0}", ToString( clock->getContentSize() ));
+    CARAMEL_TRACE_INFO( "Clock Pos : {0}", ToString( clock->getPosition() ));
 }
 
 
