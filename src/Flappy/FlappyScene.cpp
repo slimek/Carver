@@ -6,6 +6,7 @@
 #include <Brittle/Animation/FlipbookAnimation.h>
 #include <Brittle/Layout/Locate.h>
 #include <Brittle/Layout/Stretch.h>
+#include <Brittle/Nodes/HorizontalScrolling.h>
 #include <Brittle/Utils/Geometry.h>
 
 
@@ -20,6 +21,9 @@ static const Float BIRD_HEIGHT = 12;
 // Forces
 static const Float GRAVITY = -300;  // More powerful than the default.
 
+// Background
+static const Float SCROLL_VELOCITY = -50;
+
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -30,10 +34,11 @@ void FlappyScene::OnEnterScene()
 {
     /// Background ///
 
-    auto background = Sprite::create( "texture/flappy/sky.png" );
+    auto background = HorizontalScrolling::Create( { "texture/flappy/sky.png" } );
     this->addChild( background );
 
     Stretch( background ).Fill();
+    background->Start( SCROLL_VELOCITY );
 
     const auto scale = background->getScaleX();
 
