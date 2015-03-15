@@ -1,14 +1,7 @@
 package com.slimek.carver;
 
-import org.cocos2dx.lib.Cocos2dxActivity;
-import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
+import com.brittle.core.BrittleActivity;
 
-public class CarverActivity extends Cocos2dxActivity
+public class CarverActivity extends BrittleActivity
 {
-	public Cocos2dxGLSurfaceView onCreateView()
-	{
-		Cocos2dxGLSurfaceView view = new Cocos2dxGLSurfaceView( this );
-		view.setEGLConfigChooser( 8, 8, 8, 8, 16, 0 );
-		return view;
-	}
 }

@@ -27,6 +27,7 @@ LOCAL_SRC_FILES := \
 	$(CARVER_SRC)/CarverApp.cpp \
 	$(CARVER_SRC)/Bola/BolaScene.cpp \
 	$(CARVER_SRC)/Clock/ClockScene.cpp \
+	$(CARVER_SRC)/Flappy/FlappyScene.cpp \
 	$(CARVER_SRC)/Gems/GemsScene.cpp \
 	$(CARVER_SRC)/Menu/MenuScene.cpp \
 	$(CARVER_SRC)/Whack/WhackScene.cpp \
@@ -38,6 +39,9 @@ LOCAL_C_INCLUDES := \
 	$(BRITTLE_C_INCLUDES)
 	
 LOCAL_WHOLE_STATIC_LIBRARIES := \
+	Brittle \
+	Macaron \
+	Caramel \
 	$(BRITTLE_PREBUILT_STATIC_LIBRARIES)
 
 LOCAL_LDLIBS := \

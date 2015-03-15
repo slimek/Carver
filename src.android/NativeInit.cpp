@@ -1,11 +1,11 @@
 #include "CarverApp.h"
-#include <jni.h>
 
-void cocos_android_app_init( JNIEnv* evn, jobject thiz )
+
+using namespace Brittle;
+
+void NativeInit( SimpleApp*& app, AppSettings& s )
 {
-	Brittle::AppSettings s;
 	s.initialSceneId = SCENE_MENU;
 
-	auto app = new CarverApp;
-	app->Launch( s );
+	app = new CarverApp();
 }
