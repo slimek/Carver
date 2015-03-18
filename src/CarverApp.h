@@ -12,9 +12,7 @@ class CarverApp : public SimpleApp
 {
 public:
 
-    /// Application Events ///
-
-    void OnLaunch() override;
+    CarverApp();
 
 
     /// Scene Management ///

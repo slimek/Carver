@@ -11,15 +11,9 @@
 #include "Flappy/FlappyScene.h"
 
 
-void CarverApp::OnLaunch()
-{
-    auto director = Director::getInstance();
-
-    director->getOpenGLView()->
-        setDesignResolutionSize( 640, 1, ResolutionPolicy::FIXED_WIDTH );
-
-    director->setDisplayStats( true );
-}
+CarverApp::CarverApp()
+    : SimpleApp( { 640, 1024, SCENE_MENU } )  // aspect ratio 5 : 8
+{}
 
 
 //
