@@ -42,32 +42,32 @@ void MenuScene::OnCreate()
     m_panel->SetClickHandler( "menuFlappy", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_FLAPPY ); });
 
 
-    CARAMEL_TRACE_INFO( "Scene Size: {0}", ToString( this->getContentSize() ));
-    CARAMEL_TRACE_INFO( "Panel Size: {0}", ToString( m_panel->getContentSize() ));
+    TraceInfo( "Scene Size: {0}", ToString( this->getContentSize() ));
+    TraceInfo( "Panel Size: {0}", ToString( m_panel->getContentSize() ));
 
     Panel* menu = nullptr;
     m_panel->GetChild( "menuPanel", menu );
 
-    CARAMEL_TRACE_INFO( "Menu Size: {0}", ToString( menu->getContentSize() ));
-    CARAMEL_TRACE_INFO( "Menu Pos : {0}", ToString( menu->getPosition() ));
+    TraceInfo( "Menu Size: {0}", ToString( menu->getContentSize() ));
+    TraceInfo( "Menu Pos : {0}", ToString( menu->getPosition() ));
 
     LabelButton* clock = nullptr;
     menu->GetChild( "menuClock", clock );
 
-    CARAMEL_TRACE_INFO( "Clock Size: {0}", ToString( clock->getContentSize() ));
-    CARAMEL_TRACE_INFO( "Clock Pos : {0}", ToString( clock->getPosition() ));
+    TraceInfo( "Clock Size: {0}", ToString( clock->getContentSize() ));
+    TraceInfo( "Clock Pos : {0}", ToString( clock->getPosition() ));
 }
 
 
 void MenuScene::OnEnterButton_Click( Ref* sender )
 {
-    CARAMEL_TRACE_INFO( "Enter Click!" );
+    TraceInfo( "Enter Click!" );
 }
 
 
 void MenuScene::OnMenuWhack_Click( Ref* sender )
 {
-    CARAMEL_TRACE_INFO( "Whack Click!" );
+    TraceInfo( "Whack Click!" );
 
     SimpleScene::ReplaceScene( SCENE_WHACK );
 }
@@ -75,7 +75,7 @@ void MenuScene::OnMenuWhack_Click( Ref* sender )
 
 void MenuScene::OnMenuClock_Click( Ref* sender )
 {
-    CARAMEL_TRACE_INFO( "Clock Click!" );
+    TraceInfo( "Clock Click!" );
 
     SimpleScene::ReplaceScene( SCENE_CLOCK );
 }

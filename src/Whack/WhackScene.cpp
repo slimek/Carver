@@ -116,7 +116,7 @@ void WhackScene::Finish_Exit()
 
 void WhackScene::MoleAppear()
 {
-    CARAMEL_TRACE_INFO( "Appear" );
+    TraceInfo( "Appear" );
 
     m_mole->runAction(
         Bta::MoveTo( 1, 320, 400 ));
@@ -125,7 +125,7 @@ void WhackScene::MoleAppear()
 
 void WhackScene::MoleHide()
 {
-    CARAMEL_TRACE_INFO( "Hide" );
+    TraceInfo( "Hide" );
 
     m_mole->runAction(
         Bta::MoveTo( 1, 320, 200 ));
