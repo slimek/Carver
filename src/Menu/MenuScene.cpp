@@ -42,20 +42,20 @@ void MenuScene::OnCreate()
     m_panel->SetClickHandler( "menuFlappy", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_FLAPPY ); });
 
 
-    TraceInfo( "Scene Size: {0}", ToString( this->getContentSize() ));
-    TraceInfo( "Panel Size: {0}", ToString( m_panel->getContentSize() ));
+    TraceInfo( "Scene Size: {0}", this->getContentSize() );
+    TraceInfo( "Panel Size: {0}", m_panel->getContentSize() );
 
     Panel* menu = nullptr;
     m_panel->GetChild( "menuPanel", menu );
 
-    TraceInfo( "Menu Size: {0}", ToString( menu->getContentSize() ));
-    TraceInfo( "Menu Pos : {0}", ToString( menu->getPosition() ));
+    TraceInfo( "Menu Size: {0}", menu->getContentSize() );
+    TraceInfo( "Menu Pos : {0}", menu->getPosition() );
 
     LabelButton* clock = nullptr;
     menu->GetChild( "menuClock", clock );
 
-    TraceInfo( "Clock Size: {0}", ToString( clock->getContentSize() ));
-    TraceInfo( "Clock Pos : {0}", ToString( clock->getPosition() ));
+    TraceInfo( "Clock Size: {0}", clock->getContentSize() );
+    TraceInfo( "Clock Pos : {0}", clock->getPosition() );
 }
 
 
