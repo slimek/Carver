@@ -10,7 +10,7 @@
 #include <Brittle/Nodes/EllipseTouchable.h>
 
 
-void GemsScene::OnEnterScene()
+void GemsScene::OnCreate()
 {
     auto background = Sprite::create( "texture/blue-grid.png" );
     this->addChild( background );

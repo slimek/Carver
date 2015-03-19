@@ -22,7 +22,7 @@ private:
 
     /// Scene Events ///
 
-    void OnEnterScene() override;
+    void OnCreate() override;
     void OnBackKeyPressed() override;
 
     /// Touch Events ///

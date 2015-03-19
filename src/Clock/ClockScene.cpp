@@ -22,7 +22,7 @@ ClockScene::ClockScene()
 }
 
 
-void ClockScene::OnEnterScene()
+void ClockScene::OnCreate()
 {
     m_panel = Panel::Create( "layout/clock-scene.json" );
     this->addChild( m_panel );
@@ -30,7 +30,7 @@ void ClockScene::OnEnterScene()
     m_panel->GetChild( "labelSecondClock", m_labelSecondClock );
     m_panel->GetChild( "labelFrameClock", m_labelFrameClock );
 
-    m_panel->SetClickHandler( "pauseButton", &ClockScene::OnPauseButton_Click, this );
+    m_panel->SetClickHandler( "pauseButton", CC_CALLBACK_1( ClockScene::OnPauseButton_Click, this ));
 }
 
 

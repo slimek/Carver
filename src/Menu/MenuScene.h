@@ -24,7 +24,7 @@ private:
 
     /// Scene Events ///
 
-    void OnEnterScene() override;
+    void OnCreate() override;
 
 
     /// UI Events ///

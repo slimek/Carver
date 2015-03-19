@@ -24,7 +24,7 @@ MenuScene::MenuScene()
 }
 
 
-void MenuScene::OnEnterScene()
+void MenuScene::OnCreate()
 {
     m_panel = Panel::Create( "layout/menu-scene.json" );
     this->addChild( m_panel );
@@ -33,9 +33,9 @@ void MenuScene::OnEnterScene()
     m_panel->GetChild( "labelRaw", m_labelRaw );
     m_panel->GetChild( "labelFont", m_labelFont );
 
-    m_panel->SetClickHandler( "enterButton", &MenuScene::OnEnterButton_Click, this );
-    m_panel->SetClickHandler( "menuWhack", &MenuScene::OnMenuWhack_Click, this );
-    m_panel->SetClickHandler( "menuClock", &MenuScene::OnMenuClock_Click, this );
+    m_panel->SetClickHandler( "enterButton", CC_CALLBACK_1( MenuScene::OnEnterButton_Click, this ));
+    m_panel->SetClickHandler( "menuWhack", CC_CALLBACK_1( MenuScene::OnMenuWhack_Click, this ));
+    m_panel->SetClickHandler( "menuClock", CC_CALLBACK_1( MenuScene::OnMenuClock_Click, this ));
 
     m_panel->SetClickHandler( "menuBola",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_BOLA ); });
     m_panel->SetClickHandler( "menuGems",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_GEMS ); });

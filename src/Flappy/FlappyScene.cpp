@@ -30,7 +30,7 @@ static const Float SCROLL_VELOCITY = -50;
 // Build the Scene
 //
 
-void FlappyScene::OnEnterScene()
+void FlappyScene::OnCreate()
 {
     /// Background ///
 
@@ -72,7 +72,7 @@ void FlappyScene::OnEnterScene()
 
     /// Physics Settings ///
 
-    this->getPhysicsWorld()->setGravity( Vec2( 0, GRAVITY ));
+    this->GetScreen()->getPhysicsWorld()->setGravity( Vec2( 0, GRAVITY ));
 
     auto birdBody = PhysicsBody::createCircle( BIRD_HEIGHT * scale / 2 );
     bird->setPhysicsBody( birdBody );

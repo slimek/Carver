@@ -7,12 +7,12 @@
 #include <Brittle/Layout/Stretch.h>
 
 
-void BolaScene::OnEnterScene()
+void BolaScene::OnCreate()
 {
     /// Background - Repeat the Tile ///
 
     auto background = Sprite::create( "texture/blue-tile.png" );
-    this->addChild( background );
+    m_screen->addChild( background );
 
     Stretch( background ).Repeat();
 

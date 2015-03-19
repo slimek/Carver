@@ -25,7 +25,7 @@ private:
 
     /// Scene Events ///
 
-    void OnEnterScene() override;
+    void OnCreate() override;
     void OnUpdate() override;
     void OnBackKeyPressed() override;
 

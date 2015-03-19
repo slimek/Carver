@@ -50,7 +50,7 @@ WhackScene::WhackScene()
 }
 
 
-void WhackScene::OnEnterScene()
+void WhackScene::OnCreate()
 {
     auto title = Sprite::create( "texture/whack-title.png" );
     this->addChild( title, 1 );
