@@ -34,9 +34,9 @@ void MenuScene::OnCreate()
     m_panel->GetChild( "labelFont", m_labelFont );
 
     m_panel->SetClickHandler( "enterButton", CC_CALLBACK_1( MenuScene::OnEnterButton_Click, this ));
-    m_panel->SetClickHandler( "menuWhack", CC_CALLBACK_1( MenuScene::OnMenuWhack_Click, this ));
-    m_panel->SetClickHandler( "menuClock", CC_CALLBACK_1( MenuScene::OnMenuClock_Click, this ));
-
+    
+    m_panel->SetClickHandler( "menuWhack",  [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_WHACK ); });
+    m_panel->SetClickHandler( "menuClock",  [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_CLOCK ); });
     m_panel->SetClickHandler( "menuBola",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_BOLA ); });
     m_panel->SetClickHandler( "menuGems",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_GEMS ); });
     m_panel->SetClickHandler( "menuFlappy", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_FLAPPY ); });
@@ -62,22 +62,6 @@ void MenuScene::OnCreate()
 void MenuScene::OnEnterButton_Click( Ref* sender )
 {
     TraceInfo( "Enter Click!" );
-}
-
-
-void MenuScene::OnMenuWhack_Click( Ref* sender )
-{
-    TraceInfo( "Whack Click!" );
-
-    SimpleScene::ReplaceScene( SCENE_WHACK );
-}
-
-
-void MenuScene::OnMenuClock_Click( Ref* sender )
-{
-    TraceInfo( "Clock Click!" );
-
-    SimpleScene::ReplaceScene( SCENE_CLOCK );
 }
 
 
