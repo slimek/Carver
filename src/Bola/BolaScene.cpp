@@ -11,7 +11,7 @@ void BolaScene::OnCreate()
 {
     /// Background - Repeat the Tile ///
 
-    auto background = Sprite::create( "texture/blue-tile.png" );
+    auto background = Sprite::create( "texture/camel-tile.png" );
     m_screen->addChild( background );
 
     Stretch( background ).Repeat();
