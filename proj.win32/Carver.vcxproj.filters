@@ -28,6 +28,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="7. Dialog">
+      <UniqueIdentifier>{6855e17b-a5ba-4a40-ba99-152c43960624}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp">
@@ -56,6 +59,9 @@
     </ClCompile>
     <ClCompile Include="..\src\Flappy\FlappyScene.cpp">
       <Filter>6. Flappy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Dialog\DialogScene.cpp">
+      <Filter>7. Dialog</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -88,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="..\src\Flappy\FlappyScene.h">
       <Filter>6. Flappy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Dialog\DialogScene.h">
+      <Filter>7. Dialog</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

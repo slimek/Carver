@@ -95,6 +95,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="..\src\Clock\ClockScene.cpp" />
+    <ClCompile Include="..\src\Dialog\DialogScene.cpp" />
     <ClCompile Include="..\src\Flappy\FlappyScene.cpp" />
     <ClCompile Include="..\src\Gems\GemsScene.cpp" />
     <ClCompile Include="..\src\Menu\MenuScene.cpp" />
@@ -106,6 +107,7 @@
     <ClInclude Include="..\src\CarverDefs.h" />
     <ClInclude Include="..\src\CarverPch.h" />
     <ClInclude Include="..\src\Clock\ClockScene.h" />
+    <ClInclude Include="..\src\Dialog\DialogScene.h" />
     <ClInclude Include="..\src\Flappy\FlappyScene.h" />
     <ClInclude Include="..\src\Gems\GemsScene.h" />
     <ClInclude Include="..\src\Menu\MenuScene.h" />

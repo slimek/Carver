@@ -9,6 +9,7 @@
 #include "Menu/MenuScene.h"
 #include "Whack/WhackScene.h"
 #include "Flappy/FlappyScene.h"
+#include "Dialog/DialogScene.h"
 
 
 CarverApp::CarverApp()
@@ -30,6 +31,7 @@ SimpleScene* CarverApp::CreateScene( Int sceneId )
     case SCENE_BOLA:   return SimpleScene::Create< BolaScene >();
     case SCENE_GEMS:   return SimpleScene::Create< GemsScene >();
     case SCENE_FLAPPY: return SimpleScene::CreateWithPhysics< FlappyScene >();
+    case SCENE_DIALOG: return SimpleScene::Create< DialogScene >();
     }
 
     return nullptr;

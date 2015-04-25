@@ -24,6 +24,7 @@ enum SceneId
     SCENE_BOLA   = 4,
     SCENE_GEMS   = 5,
     SCENE_FLAPPY = 6,
+    SCENE_DIALOG = 7,
 };
 
 

@@ -40,6 +40,7 @@ void MenuScene::OnCreate()
     m_panel->SetClickHandler( "menuBola",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_BOLA ); });
     m_panel->SetClickHandler( "menuGems",   [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_GEMS ); });
     m_panel->SetClickHandler( "menuFlappy", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_FLAPPY ); });
+    m_panel->SetClickHandler( "menuDialog", [] ( Ref* ) { SimpleScene::ReplaceScene( SCENE_DIALOG ); });
 
 
     TraceInfo( "Scene Size: {0}", this->getContentSize() );

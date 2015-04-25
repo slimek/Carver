@@ -88,6 +88,18 @@
 					"fontSize": 24,
 					
 					"text": "Flappy"
+				},
+
+				{
+					"type": "LabelButton",
+					"name": "menuDialog",
+					
+					"left": 20,
+					"y": 110,
+					
+					"fontSize": 24,
+					
+					"text": "Dialog"
 				}
 			]
 		},
