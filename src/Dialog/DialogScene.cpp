@@ -9,6 +9,7 @@
 #include <Brittle/Nodes/NodeExtensions.h>
 #include <Brittle/Ui/UiBuilders.h>
 #include <Brittle/Utils/Geometry.h>
+#include <Brittle/Utils/Styling.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -20,7 +21,8 @@ void DialogScene::OnCreate()
 {
     /// Background ///
     
-    auto background = LayerColor::create( Color4B( 0xCE, 0xC8, 0xB2, 0xCF ), 1, 1 );
+    auto background = LayerColor::create( MakeColor4B( 0xCEC8B2CF ));
+    background->ignoreAnchorPointForPosition( false );
     Listen( background ).TouchBegan( &DialogScene::OnBackground_TouchBegan, this );
     this->addChild( background );
     Stretch( background ).Auto();
@@ -100,7 +102,7 @@ void DialogScene::OnOpenButton_Click( Ref* )
         .PressedAction( true )
         .ClickEvent( &DialogScene::OnCloseButton_Click, this )
         .Text( UiTextBuilder( "Close" )
-            .FontSize( 24 ).Color( Color4B::BLACK ))
+            .FontSize( 24 ).Color( MakeColor3B( 0x6F1F00 )))
         .Build();
     dialog->addChild( closeButton );
     Locate( closeButton ).FromBottom( 100 ).CenterX();
