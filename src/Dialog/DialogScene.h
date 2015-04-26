@@ -28,7 +28,6 @@ private:
 
     Bool OnBackground_TouchBegan( Touch*, Event* );
     void OnOpenButton_Click( Ref* );
-    void OnCloseButton_Click( Ref* );
 };
 
 
