@@ -65,7 +65,7 @@ Bool OkDialog::Init( SimpleScene* scene )
     auto okButton = UiButtonBuilder( "texture/button-normal.png" )
         .PressedAction( true )
         .ClickEvent( &OkDialog::OnOkButton_Click, this )
-        .Text( UiTextBuilder( "Close", { 24, MakeColor3B( 0x6F1F00 ) } ))
+        .Title( "Close", { 24, MakeColor3B( 0x6F1F00 ) } )
         .Build();
 
     m_layout->addChild( okButton );

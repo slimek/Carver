@@ -39,7 +39,7 @@ void DialogScene::OnCreate()
     auto openButton = UiButtonBuilder( "texture/button-normal.png" )
         .PressedAction( true )
         .ClickEvent( &DialogScene::OnOpenButton_Click, this )
-        .Text( UiTextBuilder( "Open", { 24, Color4B::BLACK } ))
+        .Title( "Open", { 24, Color4B::BLACK } )
         .Build();
     this->addChild( openButton );
     Locate( openButton ).FromTop( 100 ).CenterX();
