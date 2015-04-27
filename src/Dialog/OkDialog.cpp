@@ -2,6 +2,7 @@
 
 #include "CarverPch.h"
 #include "Dialog/OkDialog.h"
+#include <Brittle/Actions/ActionVector.h>
 #include <Brittle/Layout/Locate.h>
 #include <Brittle/Nodes/NodeExtensions.h>
 #include <Brittle/Ui/UiBuilders.h>
@@ -121,11 +122,10 @@ AnyEventTask OkDialog::Show()
     );
 
     m_layout->runAction(
-        Spawn::create(
+        SpawnOf{
             FadeTo::create( SHOW_DURATION, 0xFF ),
-            MoveBy::create( SHOW_DURATION, SHOW_MOVE_VEC ),
-            nullptr
-        )
+            MoveBy::create( SHOW_DURATION, SHOW_MOVE_VEC )
+        }
     );
 
     return m_closeTask.GetTask();
@@ -135,19 +135,17 @@ AnyEventTask OkDialog::Show()
 void OkDialog::OnOkButton_Click( Ref* )
 {
     this->runAction(
-        Sequence::create(
+        SequenceOf{
             FadeTo::create( HIDE_DURATION, 0 ),
-            RemoveSelf::create(),
-            nullptr
-        )
+            RemoveSelf::create()
+        }
     );
 
     m_layout->runAction(
-        Spawn::create(
+        SpawnOf{
             ScaleTo::create( HIDE_DURATION, 0.9f ),
-            FadeTo::create( HIDE_DURATION, 0 ),
-            nullptr
-        )
+            FadeTo::create( HIDE_DURATION, 0 )
+        }
     );
 
     m_closeTask.RunTask( AnyEvent() );
