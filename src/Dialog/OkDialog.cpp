@@ -103,8 +103,6 @@ AnyEventTask OkDialog::Show()
 
 void OkDialog::OnOkButton_Click( Ref* )
 {
-    this->setCascadeOpacityEnabled( true );
-
     this->runAction(
         Sequence::create(
             FadeTo::create( HIDE_DURATION, 0 ),
@@ -114,7 +112,11 @@ void OkDialog::OnOkButton_Click( Ref* )
     );
 
     m_layout->runAction(
-        ScaleTo::create( HIDE_DURATION, 0.9f )
+        Spawn::create(
+            ScaleTo::create( HIDE_DURATION, 0.9f ),
+            FadeTo::create( HIDE_DURATION, 0 ),
+            nullptr
+        )
     );
 
     m_closeTask.RunTask( AnyEvent() );
