@@ -60,6 +60,37 @@ Bool OkDialog::Init( SimpleScene* scene )
     this->addChild( m_layout );
     Locate( m_layout ).FromCenter( - SHOW_MOVE_VEC );
 
+    m_layout->setLayoutType( ui::Layout::Type::VERTICAL );
+
+
+    // Add a Margin on top
+
+    auto blank = ui::Widget::create();
+    blank->setContentSize( Size( 1, 50 ));
+    m_layout->addChild( blank );
+
+
+    // List of Text
+
+    auto font = FontStyle( 24, MakeColor3B( 0x803010 ));
+
+    auto param = ui::LinearLayoutParameter::create();
+    param->setGravity( ui::LinearLayoutParameter::LinearGravity::CENTER_HORIZONTAL );
+    param->setMargin( ui::Margin( 0, 30, 0, 0 ));
+
+    auto text1 = UiTextBuilder( "Apple", font ).Build();
+    text1->setLayoutParameter( param );
+    m_layout->addChild( text1 );
+
+    auto text2 = UiTextBuilder( "Orange", font ).Build();
+    text2->setLayoutParameter( param );
+    m_layout->addChild( text2 );
+
+    auto text3 = UiTextBuilder( "Banana", font ).Build();
+    text3->setLayoutParameter( param );
+    m_layout->addChild( text3 );
+
+
     // Ok Button
 
     auto okButton = UiButtonBuilder( "texture/button-normal.png" )
@@ -68,8 +99,8 @@ Bool OkDialog::Init( SimpleScene* scene )
         .Title( "Close", { 24, MakeColor3B( 0x6F1F00 ) } )
         .Build();
 
+    okButton->setLayoutParameter( param );
     m_layout->addChild( okButton );
-    Locate( okButton ).FromBottom( 100 ).CenterX();
     
     return true;
 }
