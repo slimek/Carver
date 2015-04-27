@@ -6,8 +6,7 @@
 
 #include "CarverDefs.h"
 #include <Brittle/Nodes/ScreenCover.h>
-#include <Caramel/Async/AnyEventTask.h>
-#include <Caramel/Task/TaskCompletionSource.h>
+#include <Brittle/Utils/Promises.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -30,7 +29,7 @@ private:
 
     void OnOkButton_Click( Ref* );
 
-    TaskCompletionSource< AnyEvent > m_closeTask;
+    AnyEventPromise m_closePromise;
 
     ui::Layout* m_layout { nullptr };
 };
