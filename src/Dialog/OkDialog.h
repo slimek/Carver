@@ -6,7 +6,7 @@
 
 #include "CarverDefs.h"
 #include <Brittle/Nodes/ScreenCover.h>
-#include <Brittle/Utils/Promises.h>
+#include <Caramel/Task/Promise.h>
 
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ public:
 
     static OkDialog* Create( SimpleScene* scene );
 
-    AnyEventTask Show();
+    Task< void > Show();
 
 
 private:
@@ -29,7 +29,7 @@ private:
 
     void OnOkButton_Click( Ref* );
 
-    AnyEventPromise m_closePromise;
+    Promise< void > m_closePromise;
 
     ui::Layout* m_layout { nullptr };
 };

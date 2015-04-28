@@ -111,7 +111,7 @@ Bool OkDialog::Init( SimpleScene* scene )
 // Actions
 //
 
-AnyEventTask OkDialog::Show()
+Task< void > OkDialog::Show()
 {
     if ( this->isVisible() ) { return m_closePromise.GetTask(); }
 
@@ -137,7 +137,7 @@ void OkDialog::OnOkButton_Click( Ref* )
     this->runAction(
         SequenceOf{
             FadeTo::create( HIDE_DURATION, 0 ),
-            m_closePromise.Runner( AnyEvent() ),
+            CallFunc::create( [=] { m_closePromise.RunTask(); } ),
             RemoveSelf::create()
         }
     );

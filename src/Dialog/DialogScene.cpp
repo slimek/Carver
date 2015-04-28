@@ -73,7 +73,7 @@ void DialogScene::OnOpenButton_Click( Ref* )
 
     auto dialog = OkDialog::Create( this );
     dialog->Show().Then(
-    [] ( const AnyEvent& event )
+    []
     {
         TraceInfo( "Dialog closing" );
     });
