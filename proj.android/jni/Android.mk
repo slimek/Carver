@@ -27,6 +27,8 @@ LOCAL_SRC_FILES := \
 	$(CARVER_SRC)/CarverApp.cpp \
 	$(CARVER_SRC)/Bola/BolaScene.cpp \
 	$(CARVER_SRC)/Clock/ClockScene.cpp \
+	$(CARVER_SRC)/Dialog/DialogScene.cpp \
+	$(CARVER_SRC)/Dialog/OkDialog.cpp \
 	$(CARVER_SRC)/Flappy/FlappyScene.cpp \
 	$(CARVER_SRC)/Gems/GemsScene.cpp \
 	$(CARVER_SRC)/Menu/MenuScene.cpp \
